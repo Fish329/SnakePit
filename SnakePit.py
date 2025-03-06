@@ -9,6 +9,18 @@ print("""
 Welcome to the Snake Pit!
 all snake images sourced from Wikipedia. Thank you to the Wikipedia editors for keeping the information accurate!
 All snakes in this list are nonvenomous.""")
+CAA=()
+CCC=()
+CCConstrictor=()
+PG=()
+PA=()
+HP=()
+LGG=()
+LT=()
+NSS=()
+OA=()
+OV=()
+RS=()
 class kingdom:
     def __init__(self,name,details): #define all the kinds of levels
         self.name=name
