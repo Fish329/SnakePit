@@ -1,5 +1,5 @@
 # SnakePit
-a detailed list of 12 of the 23 snakes found in new jersey.
+a detailed list of 12 of the 23 snakes found in new jersey. <br>
 This assignment was to practice with class inheritance.
 
 # How to use
