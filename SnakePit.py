@@ -54,5 +54,7 @@ carphophis=genus("Carphophis","Commonly called Worm Snakes, this genus contains 
 cemophora=genus("Cemophora","These snakes are commonly known as scarlet snakes. Both species are only found in the US.")
 pantherophis=genus("Pantherophis","The 10 snakes in this genus are very terrestial constricter snakes. Common names for some of the snakes are ratsnakes, foxsnakes, and cornsnakes.")
 coluber=genus("Coluber","This genus contains only one species of snake, the Coluber Constricter.")
-lampropeltis=genus("lampropeltis","commonly called Kingsnakes, the snakes of this genus eat other snakes!")
+lampropeltis=genus("lampropeltis","commonly called Kingsnakes, the snakes of this genus eat other snakes!! Some kingsnakes are muted brown in color, but others are more colorful with red, yellow, gray, and lavender coloring.")
+heterodon=genus("Heterodon","The upturned snouts of these snakes have earned them the name Hognose snakes. Those poor guys. They have distinct threatening tactics.")
+regina=genus("Regina","The snakes in this genus are semiaquatic. Their name, crayfish snakes, comes from their primary diet.")
 #TODO: finish writing all the levels.
