@@ -1,28 +1,58 @@
-Previous="False"
-class level:
-    def __init__(self,name,children,details):
+print("""
+ ######  ##    ##    ###    ##    ## ########    ########  #### ########
+##    ## ###   ##   ## ##   ##   ##  ##          ##     ##  ##     ##   
+##       ####  ##  ##   ##  ##  ##   ##          ##     ##  ##     ##   
+ ######  ## ## ## ##     ## #####    ######      ########   ##     ##   
+      ## ##  #### ######### ##  ##   ##          ##         ##     ##   
+##    ## ##   ### ##     ## ##   ##  ##          ##         ##     ##   
+ ######  ##    ## ##     ## ##    ## ########    ##        ####    ##   
+Welcome to the Snake Pit!""")
+class kingdom:
+    def __init__(self,name,details): #define all the kinds of levels
         self.name=name
-        self.children=children
         self.details=details
-    def print_children(self):
-        print(self.name)
-        if len(self.children)==0:
-            print(self.details)
-        else:
-            itr=0
-            for i in self.children:
-                itr+1
-                print(itr,":",i)
-                while True:
-                    pickOne=input("What's the number of the sublevel would you like to see? Input nothing to go to the previous Selections.")
-                    if pickOne=="":
-                        if Previous=="False":
-                            self.print_children()
-                        else:
-                            Previous.print_children()
-                    elif pickOne==int:
-                        stuff[self.children[pickOne]].print_children()
-testlvl2=level("testlvl2",[],"This is test level 2")
-testlvl1=level("testlvl1",["testlvl2"],"")
-stuff = {"testlvl1":testlvl1,"testlvl2":testlvl2}
-testlvl1.print_children() #TODO: figure out if this works
+class phylum(kingdom):
+    def __init__(self,name,details):
+        super.__init__(name,details)
+class classlevel(phylum): #won't let me just call it class
+    def __init__(self,name,details):
+        super.__init__(name,details)
+class order(classlevel):
+    def __init__(self,name,details):
+        super.__init__(name,details)
+class suborder(order):
+    def __init__(self,name,details):
+        super.__init__(name,details)
+class family(suborder):
+    def __init__(self,name,details):
+        super.__init__(name,details)
+class genus(family):
+    def __init__(self,name,details):
+        super.__init__(name,details)
+class species(genus):
+    def __init__(self,name,details):
+        super.__init__(name,details)
+class snake:
+    def __init__(self,name,comname,details,k,p,c,o,so,f,s):
+        self.name=name
+        self.details=details
+        self.k=k
+        self.p=p
+        self.c=c
+        self.o=o
+        self.so=so
+        self.f=f
+        self.s=s
+#Declare levels:
+animalia=kingdom("Animalia","Organisms in the Animalia kingdom are called animals. Usually, animals consume organic material, breathe oxygen, can move, reproduce sexually, etc.")
+chordata=phylum("Chordata","All chordates have 5 properties that separate them from other taxa. these are a notochord, hollow dorsal nerve cord, an endostyle or thyroid, pharyngeal slits, and a post-anal tail.")
+reptilia=classlevel("Reptilia","Reptiles are a group of cold-blooded tetrapods with amniotic development.")
+squamata=order("Squamata","Squamata is the largest order of reptiles, comprized of lizards and snakes. Squamata are characterized by their scales, and molting, which is the shedding of a dead layer of skin.")
+serpentes=suborder("Serpentes","This is a suborder of Squamata, an order containing lizards and snakes. Serpentes contains only snakes. Snakes are cold-blooded amniote vertebrates. They are covered in scales, and most of them have a peculiar skull shape that allows them to swallow large eggs.")
+colubridae=family("Colubridae","The snakes of this family are extremely diverse, no one common trait describing them all, except that they are all snakes.")
+carphophis=genus("Carphophis","Commonly called Worm Snakes, this genus contains only two species of snakes. They are small snakes, usually with brown coloring and a pink or orange underside.")
+cemophora=genus("Cemophora","These snakes are commonly known as scarlet snakes. Both species are only found in the US.")
+pantherophis=genus("Pantherophis","The 10 snakes in this genus are very terrestial constricter snakes. Common names for some of the snakes are ratsnakes, foxsnakes, and cornsnakes.")
+coluber=genus("Coluber","This genus contains only one species of snake, the Coluber Constricter.")
+lampropeltis=genus("lampropeltis","commonly called Kingsnakes, the snakes of this genus eat other snakes!")
+#TODO: finish writing all the levels.
