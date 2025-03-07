@@ -9,18 +9,20 @@ print("""
 Welcome to the Snake Pit!
 all snake images sourced from Wikipedia. Thank you to the Wikipedia editors for keeping the information accurate!
 All snakes in this list are nonvenomous.""")
-CAA=()
-CCC=()
-CCCon=()
-PG=()
-PA=()
-HP=()
-LGG=()
-LT=()
-NSS=()
-OA=()
-OV=()
-RS=()
+CAA=("Carphophis amoneus amoneus")
+CCC=("Cemophora coccinea copei")
+CCCon=("Coluber constrictor constrictor")
+PG=("Pantherophis guttatus")
+PA=("Pantherophis alleghaniensis")
+HP=("Heterodon platirhinos")
+LGG=("Lampropeltis getula getula")
+LT=("Lampropeltis triangulum")
+NSS=("Nerodia sipedon sipedon")
+OA=("Opheodrys aestivus")
+OV=("Opheodrys vernalis")
+RS=("Regina septemvittata")
+def snakeDex():
+    pass #TODO: write the snake dex.
 allsnakes=[CAA,CCC,CCCon,PG,PA,HP,LGG,LT,NSS,OA,OV,RS]
 class kingdom:
     def __init__(self,name,details,snakes): #define all the kinds of levels
@@ -32,7 +34,8 @@ class kingdom:
         print("")
         print("=[",self.level," ",self.name,"]=",sep="")
         print(self.details)
-        print("Snakes in this list that are in this level:")
+        print("")
+        print("[Snakes in this list that are in this level:]")
         iter=0
         for x in self.snakes:
             iter+=1
@@ -208,5 +211,42 @@ x++++x$&&&&&&&&$$$$$$$&&&$x;+;X$&&$$X+;;;;;;;+xXXXXxxx+++xxx+xxxxX$$$$$$$&&&&$XX
 +;;;;;;+++++++++xxxXXXXXX++XxX$$$$XxX&&&&&$$&&$$$XXxxxxX$XXX+;;;;;;;;;;;;;;;;;;;;;;;;;;;;++$X$$x++++;
 ;;;;;;;++++++++xxxxxxXXXXXxx+x$X$$X+X$$$&&$$&$$$$$$$XXxXX$Xx++;;;;;;;;;;;;;;;;;;;;;;;;;;;;;++++;;;;;;
 ""","Cemophora cocciena is a small red-orange snake with black-outlined white or yellow splotches that don't fully wrap around the body. It can be found around damp woodlands and sandy soil, under logs, boards, or debris, but it rarely comes out during the day. Their diet consists of lizards, rodents, and various kinds of eggs.",animalia,chordata,reptilia,squamata,serpentes,colubridae,cemophora)
+CCCon=snake("Coluber constrictor constrictor","Northern black racer","""Xxxxxx+++++xxxxxxxxxxxxxxxx+++++++;;++;:.......  ..;+++++++;;;+xXx++++;;;;:... ...:;;;+++++;;..xXX$$x
+Xxxxx+++++xxxxxx+;:;xxxxxxx+.......:..;:;+;;:;:..:;+++++x+xXXx++++++;;;;;::..  .xx..:;;;;;.;..+xX$X++
+xxxx+++++++++xxx;:..;xxxxxx+:..  .....:xxxxxxxxxXxx+++xXxx++++;+xxxxx+xxxxxxx++xxx+...:;;:X;  ..:+++x
+xxx+x+++++++xx+;::....:xx+xx:.    ...;+xxxxxx+;++xxxXXxxxx+++xxxxxxxxxxxxxx++++xxxx+:.;+;;x.  ...:;xx
+++xxx+++++++xx+;:.......xx:..     ..;xxxxxxxx+++XXXXx+++;::.:;+++++x+++++;:++++xxxxx:+:;;+:..::...;+x
+xxxxx++++++;;+x+;:....  .xx.   ....;+xxxXX++xXXXXXXXx++;......;Xx++xxxxxx+;+++xxxxxx..+;;$Xx+...+:++x
+xxxx+++++;;;;;:;;:........XX......;++xx+xXXXxxXXXXXx+++;:.....:+xxxXx+++xx+;+++xxxx:..:XX;xxxx;;XxXX+
+xxxxxx++;;;::......   ....:$x:::::;++X$$$$xxxXXXxx+;;;;;;:.....;xxxxxxxxxx++:...........+..xxxx+XXXXx
+Xxxxxx++;;::....   ..::::::;$X+;+XXx+++xxxXXxxx+;::::;;;;;+;::.:+xxxxxxx+++:.........  .:. ;xx;;XXXXX
+XXXXx++;;;;;;:......;;++xx+x$&xXx++;::::;;;;xx+;:::::::::;+++++;:;+++++++++..          :.....;+xXXXXX
+XXXxxxx+;;;;;;;::....:+X$Xx++X$xxx+;:::::::;;+xx::......:;+++++;;;;;x+;;;+;..        ..x+xXx++++xXXXx
+XxXXxxxxxxx+;;:..:;x$X;....:;x$$xxx+;:::..:::::;+;......::;;;;+XX$&&&&&XXx$XXX:.:+XXX$$XXx;xXXXXxX$$x
+xxxxxxxxx+;:::;xX$X+::....::;;+&X+++++++;::;;;::::+:.......::XXX$&&&$$$&&$XXx$$xX$x;:.:;..:+++++X$xxx
+xxxxxx+++;+XXXx+;+xXXXxxxxx+;;+x&x+++;++x+++++++;:::;:......x$&&&$XXxxx+++xxXxX$X;...:x;.  .:;+Xx+++x
+xxxxxx++++;++;;;+xxx+++xx+++++++$$+;;;++xxx++xxx+;:..::.....$&&&&$$XxxxXXXxxxxxX$;....+:.  ..+..:++++
+xxxxxxx+++++++++++x++;;;+++++++++$$+;+++x+++++++;;+;..;+xX$&&&&$&&&$x....:::;;::;xx;..+...++...  ....
++xxxxxxx++++++++++++;;;;;++x+++xxx$X+;+++++;+++++xXxx$&&$xx:.;$$&&&&$X;..    .......;xX;+:.          
+x+xxxxxxxxxx++++++++;:::;+++++xxx++x+;;+++xX$$$&&$XXXx:.:.::;.:$$&&&&$X+:.. .........+x.+x..         
+;;+++xx+xxx++;++++xxxXXXXXXx++;+++++x$Xx&&$XX+;;;:::::+x:.....:.X$&&&&$$x::......::x$Xx:...x+..     .
++xxxxxx++xx++++++xxxXXxx+;;;xxX$$&&$$xXx+++xXXx+;:::....+X;....:;$$&&&&$$x:.....:XX;;:...;;:.:x;.;+++
+++xxxxxxxxXXxxx++xxx+++xX$$&&&$$XxXXxX$X$XXXXX$$X+:........+xx;..:$$&&&&$$+...;X;..:;+;:..:;xx+;;x:..
+xxxxxxxxxxxxxxxxxX$$&&&&$XXxXXX$$$$&$&&$&XxxxxxxX&$X+.........:XX$$$$$$$$XX+X$xxxxxXX$$Xxxx+++;;;xxXx
+xxxxxxxxxxX$$&&&&&&&&&&&&&&$&&$&&&&$$$$&$Xxxxxxxxx&X+;++xxxXX$$$$$&&&$$$XX$XXXXXx++++++;;xXXXxxxx;..:
+xxxxx$&&&&&&&&&&&&&&&&&$$&&$&&$&&&&$$$$&$$&&&&$XXXXX$$&&&&X+;+x$&&&&&$X$$XxXx+++++++++;:...+:......;X
+X$&&&&$XXX$&&&&&&$&&$$&&$&&$$$$&$&X+++$&&&$&$X$$$&&&&&&&&&&&&&&&&&$XX$$$x.:::;xXx:..........;:;xXx+;.
+&&$xxxX$&&&$&&&&&$&&&$&$$$$$X++X&xxX$&$$$&&&$&&$$$$X+xX$$&&&&&&&$X$$$$$:...::::..:XXx:::++X$$x+++x+..
+xX$&&&&&$&&&&&$&&&&$$$$Xx+xx$&&&&&&&$$$Xxxxxx+;;X$&$&&$$$$x+xXX$$$&$X+::..:::::;x$$$$$XX$Xxx+;:.....:
+&&$&&&&&&&&&&&$&&$$x+xX$&&&&&&&&$$X$$$++++;;::......;X$$$&$X$$$$XX$$$$$$$$$$XX$x++xxxxxxxx++xX$$X+::.
+&$&&&&&&&&&$&&&$&&&&&&&&$$Xx+++++++Xx$$+;;::......:::...;X$:..:::;;::::::..::.:+xxxxxxxxxxxxxxxxx+...
+&&&&&&&&&&&&&&&&&&&&$Xxxx++++++++++$++XX;::.....::...+$X:...:;+++;;;;:;;::.....;xxxxxxxx;xxxXxxxxxxx.
+&&&&&&&&&&&&&$$Xx++xxxxx+++++++xx+xx+++$X;:..:x;;:x$x......:;;+xx++++;;;;;;;::..;xxxxx:.:XXxXXXXxXXXX
+$$$$&&&&$x++;;;;++++++;;:;;++++++x$+++++$+:;+;+$$x.......::;;;+xxxxxxx+++;;;;;::...... .:XXxXxXXxXXXX
+&&$Xxx+;;+++;;;;;;;;;;:::;+++++;;$++++++x+x$&&x...... ....:;;+xxxxxXXXXx+;::;;;;:...    .xXXXXXXXXXXX
++xxxxxx+;++++++;;;;;;;:;;;+xxxxX&$$$$$$$&&$xxx+:..........+xXXXXXXXXX$$X;.....;x;:..... .;xXXXXXXXXXX
+$$$$$$$&&$&&&&&&&&&$XXXXXXXX$&x++++++xxxx$Xx+++;:........;xXXXXXXXXX$$$+::....:+X+::......+XXXXXXXXXX
++++;++xx++++++;;;;;x$x+xxxxxxx+++++xxxxxxx$xxx+;++;;;x+;+xXXXXXXXXXXXXX;....:;+x+++;:......;xXXXXXXXx""","As the name suggests, the Northern Black Racer is a black snake. It also has a lighter colored underbelly. They are very fast, and active day and night. Baby ones are often confused for the venomous Timber Rattlesnake (not covered in the snakeDEX), so much so that even the mature ones often mimic rattlesnakes when they feel threatened. They frequent fields and woodlands, and may even show up in someone's garden.",animalia,chordata,reptilia,squamata,serpentes,colubridae,coluber)
+
 #TODO: finish writing all this.
 CAA.snake()
