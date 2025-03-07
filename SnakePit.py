@@ -27,24 +27,41 @@ class kingdom:
         self.name=name
         self.details=details
         self.snakes=snakes
+        self.level="Kingdom"
+    def printLevel(self):
+        print("")
+        print("=[",self.level," ",self.name,"]=",sep="")
+        print(self.details)
+        print("Snakes in this list that are in this level:")
+        iter=0
+        for x in self.snakes:
+            iter+=1
+            print(iter,": ",x,sep="")
+        
 class phylum(kingdom):
     def __init__(self,name,details,snakes):
         super().__init__(name,details,snakes)
+        level="Phylum"
 class classlevel(phylum): #won't let me just call it class
     def __init__(self,name,details,snakes):
         super().__init__(name,details,snakes)
+        level="Class"
 class order(classlevel):
     def __init__(self,name,details,snakes):
         super().__init__(name,details,snakes)
+        level="Order"
 class suborder(order):
     def __init__(self,name,details,snakes):
         super().__init__(name,details,snakes)
+        level="Suborder"
 class family(suborder):
     def __init__(self,name,details,snakes):
         super().__init__(name,details,snakes)
+        level="Family"
 class genus(family):
     def __init__(self,name,details,snakes):
         super().__init__(name,details,snakes)
+        level="Genus"
 class snake:
     def __init__(self,name,comname,picture,details,k,p,c,o,so,f,g):
         self.name=name
@@ -73,7 +90,34 @@ class snake:
         print("6. Family:",self.f.name)
         print("7. Genus:",self.f.name)
         while True:
-            choiche=input("Input 0 to return to SnakeDex, or input the number of a Taxonomy level to see details about it")
+            choice=input("Input 0 to return to SnakeDex, or input the number of a Taxonomy level to see details about it. ")
+            try:
+                choice=int(choice)
+            except:
+                print("ERROR: please input a whole number.")
+                continue
+            choice=int(choice)
+            if choice > 7 or choice < 0:
+                print("ERROR: there is no item at that index. please choose from the list given.")
+            else:
+                if choice==0:
+                    snakeDex()
+                elif choice==1:
+                    self.k.printLevel()
+                elif choice==2:
+                    self.p.printLevel()
+                elif choice==3:
+                    self.c.printLevel()
+                elif choice==4:
+                    self.o.printLevel()
+                elif choice==5:
+                    self.so.printLevel()
+                elif choice==6:
+                    self.f.printLevel()
+                elif choice==7:
+                    self.g.printLevel()
+                return
+                
         
 #Declare levels:
 animalia=kingdom("Animalia","Organisms in the Animalia kingdom are called animals. Usually, animals consume organic material, breathe oxygen, can move, reproduce sexually, etc.",allsnakes)
@@ -85,7 +129,7 @@ colubridae=family("Colubridae","The snakes of this family are extremely diverse,
 carphophis=genus("Carphophis","Commonly called Worm Snakes, this genus contains only two species of snakes. They are small snakes, usually with brown coloring and a pink or orange underside.",[CAA])
 cemophora=genus("Cemophora","These snakes are commonly known as scarlet snakes. Both species are only found in the US.",[CCC])
 pantherophis=genus("Pantherophis","The 10 snakes in this genus are very terrestial constricter snakes. Common names for some of the snakes are ratsnakes, foxsnakes, and cornsnakes.",[PG])
-coluber=genus("Coluber","This genus contains only one species of snake, the Coluber Constricter."[CCCon])
+coluber=genus("Coluber","This genus contains only one species of snake, the Coluber Constricter.",snakes=[CCCon])
 lampropeltis=genus("lampropeltis","commonly called Kingsnakes, the snakes of this genus eat other snakes!! Some kingsnakes are muted brown in color, but others are more colorful with red, yellow, gray, and lavender coloring.",[LGG,LT])
 heterodon=genus("Heterodon","The upturned snouts of these snakes have earned them the name Hognose snakes. Those poor guys. They have distinct threatening tactics.",[HP])
 regina=genus("Regina","The snakes in this genus are semiaquatic. They get their common name, crayfish snakes, from their primary diet.",[RS])
@@ -164,6 +208,5 @@ x++++x$&&&&&&&&$$$$$$$&&&$x;+;X$&&$$X+;;;;;;;+xXXXXxxx+++xxx+xxxxX$$$$$$$&&&&$XX
 +;;;;;;+++++++++xxxXXXXXX++XxX$$$$XxX&&&&&$$&&$$$XXxxxxX$XXX+;;;;;;;;;;;;;;;;;;;;;;;;;;;;++$X$$x++++;
 ;;;;;;;++++++++xxxxxxXXXXXxx+x$X$$X+X$$$&&$$&$$$$$$$XXxXX$Xx++;;;;;;;;;;;;;;;;;;;;;;;;;;;;;++++;;;;;;
 ""","Cemophora cocciena is a small red-orange snake with black-outlined white or yellow splotches that don't fully wrap around the body. It can be found around damp woodlands and sandy soil, under logs, boards, or debris, but it rarely comes out during the day. Their diet consists of lizards, rodents, and various kinds of eggs.",animalia,chordata,reptilia,squamata,serpentes,colubridae,cemophora)
-
 #TODO: finish writing all this.
 CAA.snake()
