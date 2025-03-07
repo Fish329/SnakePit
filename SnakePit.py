@@ -9,9 +9,9 @@ print("""
 Welcome to the Snake Pit!
 all snake images sourced from Wikipedia. Thank you to the Wikipedia editors for keeping the information accurate!
 All snakes in this list are nonvenomous.""")
-CAA=("Carphophis amoneus amoneus")
+CAA=("Carphophis amoneus amoneus") #placeholders for the 12 snakes
 CCC=("Cemophora coccinea copei")
-CCCon=("Coluber constrictor constrictor")
+CCConstr=("Coluber constrictor constrictor")
 PG=("Pantherophis guttatus")
 PA=("Pantherophis alleghaniensis")
 HP=("Heterodon platirhinos")
@@ -21,27 +21,29 @@ NSS=("Nerodia sipedon sipedon")
 OA=("Opheodrys aestivus")
 OV=("Opheodrys vernalis")
 RS=("Regina septemvittata")
-def snakeDex():
-    pass #TODO: write the snake dex.
-allsnakes=[CAA,CCC,CCCon,PG,PA,HP,LGG,LT,NSS,OA,OV,RS]
-class kingdom:
+
+
+allsnakes=[CAA,CCC,CCConstr,PG,PA,HP,LGG,LT,NSS,OA,OV,RS] #list of all the snakes for classes to interact with
+class kingdom: #superclass
     def __init__(self,name,details,snakes): #define all the kinds of levels
         self.name=name
         self.details=details
         self.snakes=snakes
         self.level="Kingdom"
-    def printLevel(self):
+    def printLevel(self): #print the details of this level
         print("")
-        print("=[",self.level," ",self.name,"]=",sep="")
-        print(self.details)
+        print("=[",self.level," ",self.name,"]=",sep="") #print the level name
+        print(self.details) #print level description
         print("")
         print("[Snakes in this list that are in this level:]")
         iter=0
-        for x in self.snakes:
+        for x in self.snakes: #go through the list of snakes and print them
             iter+=1
             print(iter,": ",x,sep="")
-        
-class phylum(kingdom):
+        input("Input anything to return to the SnakeDex.") #I couldn't get viewing snake details to work. since the snakes are declared after the taxonomy classes, and the snake objects are dependent on the taxonomy classes, I don't think there's a way to rearrange it so you can view properties of an object that does not yet exist in the current line.
+        snakeDex()
+        return
+class phylum(kingdom): #define all the subclasses
     def __init__(self,name,details,snakes):
         super().__init__(name,details,snakes)
         level="Phylum"
@@ -65,7 +67,7 @@ class genus(family):
     def __init__(self,name,details,snakes):
         super().__init__(name,details,snakes)
         level="Genus"
-class snake:
+class snake: #Snake has a scientific name, common name, ASCII art picture, a description, and taxonomy in that order.
     def __init__(self,name,comname,picture,details,k,p,c,o,so,f,g):
         self.name=name
         self.comname=comname
@@ -78,13 +80,13 @@ class snake:
         self.so=so
         self.f=f
         self.g=g
-    def snake(self):
+    def snake(self): #print snake bio
         print("")
-        print("=[",self.name, " (",self.comname,") ]=", sep="")
-        print(self.picture)
-        print(self.details)
+        print("=[",self.name, " (",self.comname,") ]=", sep="") #print snake name
+        print(self.picture) #print snake picture
+        print(self.details) #print snake description
         print("")
-        print("[TAXONOMY:]")
+        print("[TAXONOMY:]") #print taxonomic levels
         print("1. Kingdom:",self.k.name)
         print("2. Phylum:",self.p.name)
         print("3. Class:",self.c.name)
@@ -92,17 +94,18 @@ class snake:
         print("5. Suborder:",self.so.name)
         print("6. Family:",self.f.name)
         print("7. Genus:",self.f.name)
-        while True:
+        while True: 
             choice=input("Input 0 to return to SnakeDex, or input the number of a Taxonomy level to see details about it. ")
             try:
-                choice=int(choice)
+                choice=int(choice) #try again if the user input is not an integer
             except:
                 print("ERROR: please input a whole number.")
                 continue
             choice=int(choice)
-            if choice > 7 or choice < 0:
+            if choice > 7 or choice < 0: #if the user integer is out of range, try again
                 print("ERROR: there is no item at that index. please choose from the list given.")
-            else:
+                continue
+            else: #if the user's integer is within range, print level accordingly
                 if choice==0:
                     snakeDex()
                 elif choice==1:
@@ -132,12 +135,13 @@ colubridae=family("Colubridae","The snakes of this family are extremely diverse,
 carphophis=genus("Carphophis","Commonly called Worm Snakes, this genus contains only two species of snakes. They are small snakes, usually with brown coloring and a pink or orange underside.",[CAA])
 cemophora=genus("Cemophora","These snakes are commonly known as scarlet snakes. Both species are only found in the US.",[CCC])
 pantherophis=genus("Pantherophis","The 10 snakes in this genus are very terrestial constricter snakes. Common names for some of the snakes are ratsnakes, foxsnakes, and cornsnakes.",[PG])
-coluber=genus("Coluber","This genus contains only one species of snake, the Coluber Constricter.",snakes=[CCCon])
+coluber=genus("Coluber","This genus contains only one species of snake, the Coluber Constricter.",snakes=[CCConstr])
 lampropeltis=genus("lampropeltis","commonly called Kingsnakes, the snakes of this genus eat other snakes!! Some kingsnakes are muted brown in color, but others are more colorful with red, yellow, gray, and lavender coloring.",[LGG,LT])
 heterodon=genus("Heterodon","The upturned snouts of these snakes have earned them the name Hognose snakes. Those poor guys. They have distinct threatening tactics.",[HP])
 regina=genus("Regina","The snakes in this genus are semiaquatic. They get their common name, crayfish snakes, from their primary diet.",[RS])
 opheodrys=genus("Opheodrys","A genus containing two green snakes, of opposite scale-smoothness.",[OA,OV])
 nerodia=genus("Nerodia","A genus of heavy snakes that vary in size. They have flat heads, with varying patterns per species. usually brown or olive-green colored.",[NSS])
+#Declare snakes:
 CAA=snake("Carphophis amoneus amoneus","Eastern Worm Snake","""xX$$$$$x+;+xxx+++++++xXXxxxxXXXXXXXXxxx+x++++;;;+++;;;;;;;+;;;++;.+;+xXXXXxX+;;;;;+xXx+xx:+XXx++x;.::
 $x+x++++++x;+;;;;++++;+xxXX$$$XXXXX+;;;::::::::;;+;::::::;+;;;;+xX$+++xX$$x+++++XXx++x+xx;:+X++;;:.:;
 ;+xx++;;;x+Xx+;+;;++xxXXxxXXxx++++;;;::;:::::++;::::;::::::::::;++++:;+XXxx+;++x++;+++++xx+x+xXx;;++;
@@ -211,7 +215,7 @@ x++++x$&&&&&&&&$$$$$$$&&&$x;+;X$&&$$X+;;;;;;;+xXXXXxxx+++xxx+xxxxX$$$$$$$&&&&$XX
 +;;;;;;+++++++++xxxXXXXXX++XxX$$$$XxX&&&&&$$&&$$$XXxxxxX$XXX+;;;;;;;;;;;;;;;;;;;;;;;;;;;;++$X$$x++++;
 ;;;;;;;++++++++xxxxxxXXXXXxx+x$X$$X+X$$$&&$$&$$$$$$$XXxXX$Xx++;;;;;;;;;;;;;;;;;;;;;;;;;;;;;++++;;;;;;
 ""","Cemophora cocciena is a small red-orange snake with black-outlined white or yellow splotches that don't fully wrap around the body. It can be found around damp woodlands and sandy soil, under logs, boards, or debris, but it rarely comes out during the day. Their diet consists of lizards, rodents, and various kinds of eggs.",animalia,chordata,reptilia,squamata,serpentes,colubridae,cemophora)
-CCCon=snake("Coluber constrictor constrictor","Northern black racer","""Xxxxxx+++++xxxxxxxxxxxxxxxx+++++++;;++;:.......  ..;+++++++;;;+xXx++++;;;;:... ...:;;;+++++;;..xXX$$x
+CCConstr=snake("Coluber constrictor constrictor","Northern black racer","""Xxxxxx+++++xxxxxxxxxxxxxxxx+++++++;;++;:.......  ..;+++++++;;;+xXx++++;;;;:... ...:;;;+++++;;..xXX$$x
 Xxxxx+++++xxxxxx+;:;xxxxxxx+.......:..;:;+;;:;:..:;+++++x+xXXx++++++;;;;;::..  .xx..:;;;;;.;..+xX$X++
 xxxx+++++++++xxx;:..;xxxxxx+:..  .....:xxxxxxxxxXxx+++xXxx++++;+xxxxx+xxxxxxx++xxx+...:;;:X;  ..:+++x
 xxx+x+++++++xx+;::....:xx+xx:.    ...;+xxxxxx+;++xxxXXxxxx+++xxxxxxxxxxxxxx++++xxxx+:.;+;;x.  ...:;xx
@@ -247,6 +251,55 @@ $$$$&&&&$x++;;;;++++++;;:;;++++++x$+++++$+:;+;+$$x.......::;;;+xxxxxxx+++;;;;;::
 +xxxxxx+;++++++;;;;;;;:;;;+xxxxX&$$$$$$$&&$xxx+:..........+xXXXXXXXXX$$X;.....;x;:..... .;xXXXXXXXXXX
 $$$$$$$&&$&&&&&&&&&$XXXXXXXX$&x++++++xxxx$Xx+++;:........;xXXXXXXXXX$$$+::....:+X+::......+XXXXXXXXXX
 +++;++xx++++++;;;;;x$x+xxxxxxx+++++xxxxxxx$xxx+;++;;;x+;+xXXXXXXXXXXXXX;....:;+x+++;:......;xXXXXXXXx""","As the name suggests, the Northern Black Racer is a black snake. It also has a lighter colored underbelly. They are very fast, and active day and night. Baby ones are often confused for the venomous Timber Rattlesnake (not covered in the snakeDEX), so much so that even the mature ones often mimic rattlesnakes when they feel threatened. They frequent fields and woodlands, and may even show up in someone's garden.",animalia,chordata,reptilia,squamata,serpentes,colubridae,coluber)
+PG=snake("Pantherophis guttatus","Corn Snake","""    . :       ....     ;:;;::.  :..   .:..::: .  .. . . .::..     ..   ;. :..:::....   : :;:... :::;+
+  ..: ..      :.     ....::  .:. ..   .  ..:; ::.::::.  ...  :.  .  .     :;;::   :;..;.  ::;. ..  :.
+     .         :        ..    . ..::::;:  .:::.::::.       . .......   :.. .:;;.  :;;: ..:.:.:;:;;:+;
+           .:..  .     ..         ;. ;;;  ..  ..:..:+...  ...    . .     :.. .::: . : . .:;:..:.:.;;+
+     :+;. :;++;::.      . ..       :;;..    .   . .. . :.   . .     . : .;: :...: .   .:  .....;;;;..
+  .::::... ;:::;: ......         :;: .: .:..   .:.::.: . .         .         :.::.   :...::.. .::.:;:
+:.  .:;::::.       ..          ..::::;. .  .. ...:.::..           .        ..     .  ........ .:.    
+ ...  :;;;..                    .:...:. ..:.:.:. .;;:.;:.;:.::;x:         .:;. :      .. . ..  :.    
+  ::..            ::.      .     . :::.:. :..::.   .++++++++xxX$.:;:&$+;: .  ...    ::.....:;    :.. 
+    ..          ....:.   .  ..   :.. :  .:....;:;.;$x+++xX$$$$&$;;+&$XXXXx+::; :::       .:;.  :;::..
+          . .:..::::.::..::   :::.:         .:;x  xX+xxXX$&xX$&$$&&&$$$XXxXXx;..;   :.::...;. ....:..
+.              ......:   .:    ...  ...   . :;X$x :$xx$X&&$&&&&&&&x+X$;x$&$XXx;    ...:.  ..   :.::.:
+;:. :  :   .    . ..  ;..:  .        :..  :::xxXX  :XXXXXx$Xx: ;. .: ;X    .+$x:  :;::. .    ....;+;:
+    .  . ....     ..      .;    .   .     :;xx++x .+x:;+;xxX x&$:X:;x$&. .;   :+;.:;...;:.. : .:;:.:.
+        .   ..::..  :     :          :  .:.+xx++xxxx:.;;.     : $&$&&&&&&&&&Xx.;       .;+: .::::::::
+  .   .  ....::  . .:.   .      .        .xxxx+++X+;x+;+  ;   x&&&&&&&&&&&&&&&&xX:;;:  ;;:.:...:.:;::
+ .        :  ;    .::.  ..  :   .:::;:  ;++Xxx+xxXx++xx+    $xx+xXXX&&&&&$$$$&&&xx . ..::.:. ..:.:::;
+     .   :    :.;+;++ .     .;;;    :.   .x$&X$+$+xxx.Xx;;;+;+x+;+++xx$$XXXXX$&&X; . ..::     ...::. 
+   . :.     :;++++::;+:.:   :..       .::;;. .++X$x;  . X&$XxxxxxX&$::.&&XxxX$$XX+  ::..;.; ::::  ;.:
+    ..     :;::+;:; .: ::.       .:.  ::;xx;.;xXXXX$&x... :$Xxx+xxX$&.:+&XXX$X$$$     ;.  .:::. : ...
+   :..    ::::;:+++;;:...   ;     .:: .+XXX$&&$XXXXXX$+;+++x$$$$$$$$X;+;x$XXX&&x+  ..      .:.  :;.; 
+::.. ....:;+++x++x++;::     ;+;+.  xXxxxxX$$&$$X$$XXX;+&$X:+X&&xxxX&&&$X$$&&X;;++::..:.   ::;:.   .;:
+ ;.::::+;+x$.::&$$XX$&+ :X+x+xX&+..+&$$$$&&&&&&&&$$x;+&xxx x&$$&$&&$$&&X&&Xxx:;:  ... .;..::.: .: .:.
+    :;:;xXXX$X;xX$$$$$:x&$XXXX$$&;;++xxX&&&&X+:;:.:X;Xx:+xx    .::     ;x:+:;;;:::.::.:+$     . :..::
+.:.::.:;XXXXx;X&&&$&&&XxX&$$$$$$$xX&$$&&&$&$$++&&&x;:&$&&$: .x.   .  ;.  . xx;;:    .:;+x::  .    ...
+.  ..::xX$$xx:++++;;xxxX;X&$$XXx+;++++x;xxxX$&&$$XxX..X&$XX$&X;+:.xXX    ;.  ...+x+x:.:;.:   .  .. .;
+ .;.;;+x$x;X++ .; . . ::. ;x;;:++::..;;:;++XX&&$XXxX; +:;$&&&&$$X$&$xXXxx+$XX$X&$     .  +; .:: .. ;:
+::;:::;x$X;Xx :. .       .   .;:. ..:  :;xXxx&&$$X$XXxxx: XXX+xxxX:;;;+;&$$XX$$&&;: ;$+x++:   ..     
+;;:..:;+$X+;Xx .    :.      .::.          ;;xX&&&$$$$$$$&+  .X$XXX$&&++&&&$$&&&&&X$x&&Xx++x+..:::    
+;+++::;xXX$$+x+.  .;..:  .  .:.. :  .::   .;xX$&&&&&&&&x::.x&$$$$$&&+xx&&&&&&&&&&&$$&&&$Xx+xX+$. .   
+::::..;X$$Xx$$: ;:::;;.:...    :.:;. .:.:.:::.;X$&&&&$$X++&&$$$$$&&&XXX&&&&&&&&&&&&&&&&&&$$$$&:X.:.. 
+.  .;::X$X$$$+x .  :::  .    .:::  . .      .;.:::+x$$&&&&&&&&$$&&&$$&&&&&&&&&&&&&&&&&&&&&&&&x+:  .x.
++..:;;+$&X+$;+X:.   ..::.  :..   ::...       ;.  ::;;++XXX$XX$XX$&X$XX$&&&&&&&&&&&&&&&&&&&&$$X+:x;  :
+  .::;:x$&$$$X..      .: .:..:.;;;. .;    .  ::::.. ..;:;;++++xxx+XxXXx$XXX++$X$&&&&&&&&&&&&&&. .:;; 
+. ...: .x&$XX; ;  ::: .  .:;+++. . :..            .  .:.. .;+ . ..;::.+X++XX;xxxxX$XX&X$&Xx++;. :;;:.
+++;   .:++X$X;  .....   ::: ..:.:.. ;:    .  ::.     .    :..;;..;.   :+;;.:::.x+xxxxxXX+X&+ :;.:    
+... ..:;;..;+;. .       ::.;+;::+x:.;.    .;. ...          .::: :::...:;;;;+;:;; ;;:;+xX:+;;:.:+; :. 
+       .;+::;;+;;..     .  .:+++;:....      . .  .         : :.:+;;;;.+::..: :. .;:;:::;x+;..:x;;;   
+.    .. ..: ..:; :  :.  .  :.:+;+::.  :++.+      .: .     .       ;.:.. :.:.   :; :;:;++x++. :;+x .: 
+""","An orange-bodied snake with black-outlined red blotches on their backs. They are one of the most popular kinds of snakes to keep as pets, second only to the Ball Python. In the wild, corn snakes typically live for 10-15 years, TODO: finish this bio")
+#TODO: finish writing all the snake bios. change the print statement in snakeDex to account for them being objects.
 
-#TODO: finish writing all this.
+#redefine the allsnakes arrat now that the snakes are objects
+allsnakes=[CAA,CCC,CCConstr,PG,PA,HP,LGG,LT,NSS,OA,OV,RS]
+def snakeDex(): #list of all the snakes for the user to interact with
+    print("########## THE SNAKEDEX ##########")
+    iter=0
+    for x in allsnakes: #go through the list of snakes and print their names
+        iter+=1
+        print(iter,": ",x,sep="")
+
 CAA.snake()
