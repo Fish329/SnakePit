@@ -13,7 +13,7 @@ CAA=("Carphophis amoneus amoneus") #placeholders for the 12 snakes
 CCC=("Cemophora coccinea copei")
 CCConstr=("Coluber constrictor constrictor")
 PG=("Pantherophis guttatus")
-PA=("Pantherophis alleghaniensis")
+PO=("Pantherophis alleghaniensis")
 HP=("Heterodon platirhinos")
 LGG=("Lampropeltis getula getula")
 LT=("Lampropeltis triangulum")
@@ -23,7 +23,7 @@ OV=("Opheodrys vernalis")
 RS=("Regina septemvittata")
 
 
-allsnakes=[CAA,CCC,CCConstr,PG,PA,HP,LGG,LT,NSS,OA,OV,RS] #list of all the snakes for classes to interact with
+allsnakes=[CAA,CCC,CCConstr,PG,PO,HP,LGG,LT,NSS,OA,OV,RS] #list of all the snakes for classes to interact with
 class kingdom: #superclass
     def __init__(self,name,details,snakes): #define all the kinds of levels
         self.name=name
@@ -290,11 +290,50 @@ PG=snake("Pantherophis guttatus","Corn Snake","""    . :       ....     ;:;;::. 
 ... ..:;;..;+;. .       ::.;+;::+x:.;.    .;. ...          .::: :::...:;;;;+;:;; ;;:;+xX:+;;:.:+; :. 
        .;+::;;+;;..     .  .:+++;:....      . .  .         : :.:+;;;;.+::..: :. .;:;:::;x+;..:x;;;   
 .    .. ..: ..:; :  :.  .  :.:+;+::.  :++.+      .: .     .       ;.:.. :.:.   :; :;:;++x++. :;+x .: 
-""","An orange-bodied snake with black-outlined red blotches on their backs. They are one of the most popular kinds of snakes to keep as pets, second only to the Ball Python. In the wild, corn snakes typically live for 10-15 years, TODO: finish this bio")
+""","An orange-bodied snake with black-outlined red blotches on their backs. They are one of the most popular kinds of snakes to keep as pets, second only to the Ball Python. In the wild, corn snakes typically live for 10-15 years, but in captivity, they can live for over 20 years! They can be found in places like overgrown fields, trees, and abandoned or rarely-used buildings or farms. They can, in fact, climb trees. Their diet may consist of rodents, other reptiles, amphibians, or unguarded eggs in the trees.",animalia,chordata,reptilia,squamata,serpentes,colubridae,pantherophis)
+PO=snake("Pantherophis obsoletus","Black Rat Snake","""XXXXXXXXXXXXXXXxxxxxxxxxx++++++;;;;::::::.......   .::::........:;++;::.........       ...::;;:......
+$$$$$$$$$$$$$$$$$XXXXXXXXXXXXXxxxxxx++++;;:::... ..::;;:::::......::::::::::.......    .....::.......
+&&&&&&&&&$$$$$$$$$$$$$$$$XXXXXXXXXXXXxx+++;;::.      ..::.............:::..........    ..............
+&&&&&&&&&&&&&&&&&&&&&$$$$$$$$$$$XXXXXx;;;:..         ..........   ..  .....:::::..    ...............
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&$$$$$XX;:..          ...:::::;:.......   . ..:...        ..  .........
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&$$$$xx+;.         .:::::;+x+::::::.......::.. ..:.........    .....
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&$$$$Xx+;:         ...:;+xXXXx+;:..  ......:::::;;:::....:..    .::.
+&&&$XXX$$&&&&&&&&&&&&&&&&&&&&&&&&$$$XXxx+;.        .:;+xXXXXXXx;::.  ....::::;;:::::.................
+Xx+++x+xXX$&&&&&&&&&&&&$$$&&&&&$$$$$XXx++;:.     .:;+xX$$$$$$Xx:::.   ....:......   ...:....:;;::::..
++xXXxXxxX$$$&&&&&&&&&&&&$&&&&&$$$XXX$Xx++;..:::::;+xXX$$$$$$$Xx+;:.........    ...  ..........:..::::
+$XXXX$$$$$$$$$$$$$$$$$$$$$$&&$$$$$$$$$Xx+:.:;::;++xX$$$$$$$$$X+;:::::.....      ...::....     ......:
+XXX$$$$$$$$$$$XXXXXXXXxxx+xxx+++xxxXX$XXx+;;;;;+xX$$$$$$$$$$$Xx+;;:::::.:.. .......::.......         
+$&&&&&$$$$$$$$x;;;;:;::::::::...::::;;:;;x+;;;+xX$$$$$$$$$$$$$$$XXxxxxx+;;::::::......    .  ...... .
+&&&$$$$&&$$$$$+:....:;;;;:.:::::::::;;;;++;;+xX$$$$$$$$$$$$&&$$$$$XXXXXXXXxx+;;::.....   ............
+&&&&&$$&&$$$$$x:....::::::::;;:;;;;+++++++++;;:  .:;::+xx;:+x+X$$$$$$$XXXXXXXxxxx+++++;::....::..:...
+&&&&&&&&&&&$$$X;::::::::::;;;;:::;;;;;:.....      .::;;..:::;;+++X$$$$$XXXX$$$$XXXXX$$x+;:;;.....::::
+&&&&&&&$&&&&&$X;::::::::;;:;;;;;;;+;.       ;xx:..:xX+;;;:;;;+xxxX$X$&&&&&&&$$$XXXXX$$XxxXxx+;;;;;;;;
+&&$$&&&$&&&&&$$+::::::::;;;++;;+;++  .   .+x$xx;$$$$x+xxx+xX;x$$$XXXx$$$$$$$$XXXXXXXXX++x$$$+:..::+xx
+&&&&&&&&&&&$$XXXXXXXXXXxxxxxxxXxx; :: .+xxXX;;+;:;xx::..::  :+xx+;;;;$$$$$$$$$$$$XXXXXXXXXx+:  .:;+;.
+&&&&&&&&&$XxX$$$$$$$$$$$$$$$$$$x;.::;++xx;:.     .           :;;;+;;X$XxX$$$$$$$$$$$XXXXXxx;...:;++;:
+&&&&&&&$$x+X$XXX$$$$$&$$$$$$$+;+:   :;;.      .. ..  ..:::;;;;;+;;+$$$$$$$$X$$$$XXXX$XXxxxx+::;:::...
+&&&&&$XxXx+xXXX$$$$$$$$$$Xx+:+x+:       .::::;;:;:::;:;;;+;+;;;+xX$$XX$$$XXXXXXXXXXXXxxxx+::.......  
+&&&&&Xx++;;;+xX$$$$$$X+;..+xXXx:    .:::;:;;;;;;;;;;+++++++xX$$$$$$XXXXXXXXXXXXXXxxxx+;:......       
+&&&&$x;;::.:.:...  .    ;X$XX;      ::;;;;++;;;++++xXX$$$$$$$$$$XXXXXXXXXXxxXXXXxxxx+:    ..         
+&&&&$X+..  .        ;;xX$$+;.       :::;;;;+++xX$&&$$XXXXXXXXXXXXXXXxxxx;::..:::::...     ..         
+&&&&$Xx+;;;;;;::+;xXXxxx+         . :;;;;++xX&&&&&&&&$XXXXXXXXxxXXXXxx+;. ....:::::;:     ..     .:;.
+&&&&$xx+:;x+xxxxxxx+;;:          .:;;++++x$&&&&&&&&&&&$$XXXXxxxxx+;;:::.    .::::...      ..   ..:+x+
+&&&&$+:..:;;;:;::.            :;;;+++++X$$$&&&&&&&&&&&&$Xxxxx++;..  .. .       ... . ..  ...    .... 
+$&&&&+         ...         .:;;+++x++$$$$$$$$$&&&&&&&&&&$Xx+:....  .      .   ....     . ::..... .   
+X$$$$$;                .:;;;++xxxXX$$$$$$$$$XX$&&&&&&&&&&Xxx+;::   ..   ..:....   .:::....:. ....::..
+$$&&$$$X;        ..:;;;++++xxXx;;xxX$$$$$$$$$$$&&&&&&&&&&$xx+...   ...      .:..::++;. ....:......::.
+XX$$$$$&&&&Xx+;;;++++xxxXX$&&$;::.    :+XX$$+.X$&&&&&&&&&$xxx+;.  . .. .   .:::;:::;. .:::+;.   .::::
+XXXX$$$$&&&&&&&&$&&&&&&&&&&&&&&&$XXx;      .;+xX$$&&&&&&&XXxxxx++;;.  . .....:;::::..............:;:;
+$$$$$$$&&&&&&$x. X&&&&&&&&&$$&&&$$&$$&$XxXxxxxXxxxxxxX$$X$&$xxXXXxXxx;:...:::;:.  ...   ..... ...;;::
+&$$$$$&&&$Xx:.x x$&&&&&&$x++$&&&$&&&&$$$&&&$$XXxX$$x+  :.  .;++++xxxx+++:::.    . .....:....  .....::
+&&&&&$X;:++xX$&&&&&&&&&&&&&&&&&&&&&&&&$$$&&&&&$$$$$$$Xxxxxx+;;x+:..:;++xx+;:.....:...  .::::..:::...:
+&X+;::+x$&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&$&&&&&$XXx+xxxxx+++x+x+;xxxxx++++;:..::.:;++;::;;:;xXX
+   +x$&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&$$&$$$$$$$XXX$$XXXXXXxx+xxxx++;.::.::::::;+;++;;;
+""","Adult Black Rat Snakes are black in color with a white underbelly. When they're younger, they are brown and grey, but as they grow, the dark pattern grows in quickly. UNFINISHED")
 #TODO: finish writing all the snake bios. change the print statement in snakeDex to account for them being objects.
 
 #redefine the allsnakes arrat now that the snakes are objects
-allsnakes=[CAA,CCC,CCConstr,PG,PA,HP,LGG,LT,NSS,OA,OV,RS]
+allsnakes=[CAA,CCC,CCConstr,PG,PO,HP,LGG,LT,NSS,OA,OV,RS]
 def snakeDex(): #list of all the snakes for the user to interact with
     print("########## THE SNAKEDEX ##########")
     iter=0
