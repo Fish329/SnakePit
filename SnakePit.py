@@ -139,7 +139,7 @@ coluber=genus("Coluber","This genus contains only one species of snake, the Colu
 lampropeltis=genus("lampropeltis","commonly called Kingsnakes, the snakes of this genus eat other snakes!! Some kingsnakes are muted brown in color, but others are more colorful with red, yellow, gray, and lavender coloring.",[LGG,LT])
 heterodon=genus("Heterodon","The upturned snouts of these snakes have earned them the name Hognose snakes. Those poor guys. They have distinct threatening tactics.",[HP])
 regina=genus("Regina","The snakes in this genus are semiaquatic. They get their common name, crayfish snakes, from their primary diet.",[RS])
-opheodrys=genus("Opheodrys","A genus containing two green snakes, of opposite scale-smoothness.",[OA,OV])
+opheodrys=genus("Opheodrys","A genus containing two similar looking green snakes, of opposite scale-smoothness.",[OA,OV])
 nerodia=genus("Nerodia","A genus of heavy snakes that vary in size. They have flat heads, with varying patterns per species. usually brown or olive-green colored.",[NSS])
 #Declare snakes:
 CAA=snake("Carphophis amoneus amoneus","Eastern Worm Snake","""xX$$$$$x+;+xxx+++++++xXXxxxxXXXXXXXXxxx+x++++;;;+++;;;;;;;+;;;++;.+;+xXXXXxX+;;;;;+xXx+xx:+XXx++x;.::
@@ -376,7 +376,55 @@ HP=snake("Heterodon platirhinos","Eastern Hognose Snake",""":;:::::::..::::::...
 :;xx;::;::::;::;:;::;;::::;+;:::::::;;;:::;:;:;;;:;;;+;;:;;;;;;;:;;;:;;;;+++;;:::;;::;;::::;::::::;;;
 ::::::;:::::::::;;;;::::::::::;+:::::::::::::::;::;;;;;;::;++;++::;;:;:;;;:;;;:::;;::;;::;:::::::;;;;
 ""","The name \"Platirhinos\" is derived from greek, meaning \"flat snout\". It uses this unique nose to burrow into the ground. The patterns on this species are extremely diverse, depending on locality. In New Jersey, the coloring is commonly a rusty gray with black or brown rectangular blotches. It can be found in places with sandy substrates. It often immitates venomous snakes by puffing up its body and flattening its head. It can also deter predators by emitting an awful smell.",animalia,chordata,reptilia,squamata,serpentes,colubridae,heterodon)
+LGG=snake("Lampropeltis getula getula","Eastern Kingsnake","""image here""","Description here",animalia,chordata,reptilia,squamata,serpentes,colubridae,lampropeltis)
+LT=snake("Lampropeltis triangulum","Eastern Milk Snake","""image here""","This snake typically has alternating red-black-yellow or white-black-red patterns. It likes wooded areas, river banks, and rocky hillsides, and also may make its home in a barn or building with a rodent problem. They are often mistaken for the venomous snakes of New Jersey, the Northern Copperhead and the Timber Rattlesnake. You may hear some mneumonics to help you differentiate them, but they dont exactly work.",animalia,chordata,reptilia,squamata,serpentes,colubridae,lampropeltis)
+NSS=snake("Nerodia, sipedon sipedon","Northern Water Snake","""image here""","Description here",animalia,chordata,reptilia,squamata,serpentes,colubridae,nerodia)
+OA=snake("Opheodrys Aestivus","Rough Green Snake","""xxxxxxxxxxxxxxxxxxx+x+++++++++++++++++++++++++xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx$$$$$$XxxxxxXXXXX
+xxxxxxxxxxxxxxxxx+x++++++++++++++++++++++++++++++xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx$&&$$$XxxxxxXX$X
+xxxxxxxxxxxxxxxx+++++++++++++++++++++++++++++++++++++x+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx$$&&$$XxxXXXXXX
+xxxxxxxxxxxxxxxx+++++++++++++++++++++++++++++++++++++++++xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxX$&&$$XXXXXXXX
+xxxxxxxxxxxxxxx++++++++++++++++++++++++++++++++++++++++++++xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx$$XXXXXXXXXX
+xxxxxxxxxxxxxxxx++++++++++++++++++++++++++++++++++++++++++++++xxxxxxxxxxxxxxxxXXXxxxxxxX$$XXXXXXXXxxx
+xxxxxxxxxxxxxxxxxx+++++++++++++++++++++++++++++++++++++++++++++++xxxxxxxxxxxxx$$$$$Xx$$XXXXXXXXXxxx+x
+xxxxxxxxxxxxxxxxx+++++++++++++++++++++++++++++++++++++++++++++++++xxxxxxxxxxxxx$$$$$$XXXXXXXXxxxxxxxX
+xxxxxxxxxxxxxxxx+++++++++++++++++++++++++++++++++++++++++++++++++++++xxxxxxxxxxX$$XXXXXXXXxxxxxxxxXXx
+xxxxxxxxxxxxxx++++++++++++++++++++++++++++++++++++++++++++++++++++++++xxxxxxx$$$$XXXXXxxxxxx+xxX$$XXx
+xxxxxxxxxxxxx++++++++++++++++++++++++++++++++++++++++++++++++++++++++++xxxxX$XXXXXXxxxxxxxxxX$&$$$$$X
+xxxxxxxxxxxx+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++xxX$XXXXXxxxxxxxxxX$$$$$$$$$$$
+xxxxxxxxxxx+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++xXXXXXXXxxxxxxxxx$$&$$$$X$$XXX$
+xxxxxxxxx+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++xXXXXXXxxxx+++xxXX$&&$$$XXXXXXXX$
+xxxxxxxx+++++++++++++++++++++++++++++++++++++++++++++++++++++++++xXXXXxxxx+++++++x$&$$$$$$$X$XX$X$$$$
+xxxxxxx++++++++++++++++++++++++++++++++++++++++++++++++++++++++xXXxxxxx++;+++++x$$$$$$$$$$$$$$$$$$$&&
+xxxxxx++++++++++++++++++++++++++++++++++++++++++++++++++++++xxxxxxx++;+;;++++xX$$$$XXXX$$$$$$$$$&$&$$
+xxxxx+++++++++++++++++++++++++++++++++++++++++++++++++++++xxxxx+++++;;;;;;+X$$$$XX$$$$$X$$$$$$$$$XXXX
+xxxx++++++++++++++++++++++++++++++++++++++++++++++++++xxx+++++++;;;;;;++X$$XXXXX$XX$$$$$$$$$$XXXXXXXX
+xxxx++++++++++++++++++++++++++++++++++++++++++++++xxx++++++;;;;;;;;;x$$$XXX$XXX$$$$$$$$$$XXXXXXXXXXXX
+xx++++++++++++++++++++++++++++++++++++++++++++xx+++++++;;;;;;;;;;X$$$XXXXXX$$$$$$$$$$$XXXXXXXXXXXXXXX
+xx+++++++++++++++++++xx++++x+++++++xxx+++++++++++;;;;;;;;;+;;;+X$$$$XX$$XXXX$$$$$$$XXXXXXXXXXXXXXXXXX
++++++++++++++++++xxx++xx;+;;+++++++;;;++;++;+;;;;;;;;;;+;+++X$$XXXXXX$XX$$$$$$$$XXXXXXXXXXXXXXXXXXXXX
++++++++++++++xXxx+++X$$X;X:+++++;;;;;;;;;;;:;;;:;:;;+;++xX$$$$XXXXXxX$$$$$$$XXXXXXXXXXXXXXXXXXXXXXXXX
++++++++++++++xxX+x+++xXX+:::::::::::::::::::::;:;;;++X$$$$X$XxxXxX$$$$$$$XXXXXXXXXXXXXXXXXXXXXXXXXXXX
++++++++++++++++;;:;;::;;;;;;;;:::::;::::::::;;;;+xX$$$$XXXXXXXX$X$$$$XxXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
++++++++++++++++++++++++++++++++++;;;;+;;;;+;+xX$$$$XXXX$$$xXXX$$$$XxxXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
++++++++++++++++++++++++++++++++++++xxxxx+++x$$$XXXXxX$XxxXX$$$$XxxxXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+++++++++++++++++++++++++++++++++++++++++xXXXXXXXXXxxxXXXX$$XxxxxxXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
++++++++++++++++++++++++++++++++++++++xXXXXXxx+xXXxXXXXX$XxxxxxxXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxx
+++++++++++++++++++++++++++++++++++xXXXxxxxxXXXXXXXX$$XxxxxxxxXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxxxxxx
+++++++++++++++++++++++++++++++XXXXx++xxXXXXXXxxX$XxxxxxxxxXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxxxxxxxxxxx
+++++++++++++++++++++++++xxXxxXXxxxxXXXXXXXXxXXXxxxxxxxxXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxxxxxxxxxxxxxx
++++++++++++++++++xxxxXXxxXXXx+xxxxXxXXXXXXXXxxxxxxxxXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxxxxx
+xxx++++++++xxXXXxxxxxxXXXx+xxxxxxxXXXXXXXxxxxxxxXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxxxxxxxxxx
+$$XXxx+++xxxxxxxxxxxXXxxxXxXxxX$$XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxxxxxxxXXXXX
+$$$$$XXxxxxxxxxxXXXXxxxxXXXXX$X$$XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxxxxxxXXXXXXX
+xX$$$$$XxxxxXxXXXXXXXXXXXXXXX$XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxxxxxXXXXXXXXXX
+X$$$$$$$XXXXXxxxXXXXX$$XX$$XXxxxxxxXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxxxxxxxXXXXXXXXXXX
+""","One of two green snakes in New Jersey. This one has rough keeled dorsal scales, and it camouflages in vegetation overhanging water. They like to eat insects, tree frogs, and tree snails. See also: Opheodrys vernalis.",animalia,chordata,reptilia,squamata,serpentes,colubridae,opheodrys)
+OV=snake("Opheodrys Vernalis","Smooth green snake","""image""","One of two green snakes in New Jersey. This one has smooth dorsal scales, and it camouflages in marshes, meadows, open woods, and other terrestrial habitats. They like to eat spineless caterpillars, moths, ants, snails, worms, and more. See also: Opheodrys Aestivus.",animalia,chordata,reptilia,squamata,serpentes,colubridae,opheodrys)
+RS=snake("Regina septemvittata","Queen Snake","""image""","This snake can be from olive to gray or dark brown in color, with peach or yellow stripes that run across its length. WIP")
+
 #TODO: finish writing all the snake bios. change the print statement in snakeDex to account for them being objects.
+#Placeholders: LGG, LT, NSS, OV, RS
+#unplaceholded: OA
 
 #redefine the allsnakes arrat now that the snakes are objects
 allsnakes=[CAA,CCC,CCConstr,PG,PO,HP,LGG,LT,NSS,OA,OV,RS]
