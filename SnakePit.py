@@ -329,7 +329,53 @@ $$$$$$$&&&&&&$x. X&&&&&&&&&$$&&&$$&$$&$XxXxxxxXxxxxxxX$$X$&$xxXXXxXxx;:...:::;:.
 &&&&&$X;:++xX$&&&&&&&&&&&&&&&&&&&&&&&&$$$&&&&&$$$$$$$Xxxxxx+;;x+:..:;++xx+;:.....:...  .::::..:::...:
 &X+;::+x$&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&$&&&&&$XXx+xxxxx+++x+x+;xxxxx++++;:..::.:;++;::;;:;xXX
    +x$&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&$$&$$$$$$$XXX$$XXXXXXxx+xxxx++;.::.::::::;+;++;;;
-""","Adult Black Rat Snakes are black in color with a white underbelly. When they're younger, they are brown and grey, but as they grow, the dark pattern grows in quickly. UNFINISHED")
+""","Adult Black Rat Snakes are black in color with a white underbelly. When they're younger, they are brown and grey, but as they grow, the dark pattern grows in quickly. It has a varied diet, including (but not limited to) mice, rats, moles, eggs, frogs, lizards, and more.",animalia,chordata,reptilia,squamata,serpentes,colubridae,heterodon)
+HP=snake("Heterodon platirhinos","Eastern Hognose Snake",""":;:::::::..::::::...:.::.:::::::.:...:::;:..::::::...:......:::.::...::.....:...:..:::.:::::::;;:::::
+::::;::.::::::;:::.:::::::.::.:..:::::::.:;:......::.:::..........:::::::::::::::.......:....::::::::
+:::;;:.:.:::::::........:.....::...:::...::.:.:::...:.......::...::::.::.:.:.::...::::....:::::::::::
+::.:::::::::::::...........:::....:::::.......::::.:..:....:......:.....:;:...::::......:....::.:::::
+:..::....:::........::::..:.....::::....::::::::::.::::...::::.......::.:...:..:;xx:....:..::.:::..::
+:::::::..:::.........::........:::;:..::::::::::.:..::..:::.....:..:.::..::.::;+X$Xx;::::.....::...:.
+:::::.::::........:...........::::.:::::...::...:.............:::::....:::::;;+XX$X$x;::::::::::.::..
+::.:::.:............:..::;++++xxxxx+++;;;::::;::::............:.:...::::::::;xX$$$$$Xx;:::..........:
+:::::::::......::.:::+xxXx+x$$$$$$$$XXxx++++;;::::...:::.........:.:::::::+x+xX$$$$$x++xx+:::::::...:
+:::::::::....::.:+xXX$$Xx+X&&&$$&&Xx+xxX$$$XXXx+;:....::.:......:..::::.::;+x$$$$&$$$XXx+;;::::.:::::
+..:::.:::..:::;xX$$$&&&X+X&$&$$$&Xxx$$$$$$$$$$XXXx;:...:::....::.::::::::+X$&$$$&&&$$$$$$X;:::..:..::
+::::::::::.:xx+X$&&&&&&$+$&$$$$$XxxX$$$$$$$$$XXXxXXXx;::::::::...::::::::$$&&$$$$&$$$$&&&&X;:::::::;;
+::::::..:;+X$x+x$&&&$$$$x$$$$$$X$&$X$X$$$$$x+x++xXXXXX;:::;::..:::::::;+:$&$&$$XXxx$X&&&&$X;;:;::::::
+:::..:::+X$$$X+x$&$$$$$$$&$$$$$$&&XX$XX$$$x+X$$$$$$$Xxxx+:::..:::;::::;+$$&&&$$xXxx$x$&&&&$$;::::::::
+..:::+xXX$$&&&$x+&$$$$$$Xx+$XXXxxxX$XXXXXxX$$$$$$$$$XXXXXx:::.::::..::;+$&$$&$$x++x+xx$$&&$$x;::::::.
+::::;+x$$&&&&&&X$&&$X$$X$XXX$$$XxXXXx$X$$XxXXX$$$$$$$$XXXx+;:;;::::::::;$$&$$XxX$&&$$$xxxXXx+++::::::
+::;+;xX$&&&&$$$$$XXx$$$$$XX++;;;;;+++x+XxxXXXX$$$$$$$$$XXXxx;::;::::::::;xx+xXX$$$$$$$$XXXxx+;;::::::
+;+;;xx++X&&&$$$$&$$xxXXx++;;;::;::::;;xXXXXXXX$$X+++++++$$$$x;;:::::::;;++++xxX$$$$$$$XXXxxx++;;:::.:
+;::+$$Xxxx$&&$$$$$$$XX+++;;;:::::::::::;xxxXX$X+++xX$$&$$xXX+;;:::::::;;+$$$$$$XX$$$$XXXX$$$$x;+;;:::
+::;+X$$$xxxxX&&X+X$Xx+;;:::;;;:::::::;+;+xX$$++X$$$$&$$$X$XxXx;:::::::::;+xxxxxX$$&$$$$X$Xxxx++;::.::
+:.;X$$$&&&&&$$$XXX$xx+;;:::::;:::::::;;:;;;x$Xx$$$$$&$$$XXX$Xxx;;:::::::;++xXXXx+$&&&&$$Xxxxxx+;;::::
+::;x$$$&&&&$$$$$XXXxxx;;+x+;xxxXx+;+++;:;+++xxXXX$$$$&$$$$XXX$xx+;::::::+;$&$&&$xx+x+x$&XXX$$x;;;::+;
+::;X$$&X+x$&&$$$&$$XXXXX$Xx$$$$$$$$$$X+++++xxXxXXX$$$&&&$xXXXx++;::::::;;+$&&&&&x+$X+XXxX$&&$$;+;::;;
+::;xXXXx+X&&$Xx+X$$$$$$$$&+x+xX&&&&&&&$$Xx+xX$$XXX$$&x++xX&&&&Xx;;;:;;:::;++xxxxX&$$&$$X+x$&$$+++Xx;:
+:::+X$$x$&&$x+X$&$$X$&&&&&$&$+xX$&&&&&&&&&$XXxxXX$$$xxX+$$X$$$X+;;;;:;:::;$xxxX$$$$$&&&&&Xxx$X+XXXx+;
+;::;+X&$XX$$$&&&$xxx$&&&&&&&&&xX$&&&&&&$+X$&XXxXxXx++x$&$$$$XXXX++;;:::::+xX$$$XxX$$$&&$$$$XXxxxXX$x:
+:.:;;;xxxx$$$&&&xx+X&$$$$$&&&&&XX$$$$&&xxX&&&x$$$X++X$$&$$$$$$$x+++;;:::::+XXXXXX$$&$$$$$XXXxxX++;;;:
++::;;:+xXxX$$XX$&&&&xX$$$X$$$&$$$$$$$&xxX&&&&x&&$XX&&$&&&$$$$$XXx++;;;:;:;++$&&&$$X+x+X$$X$$$Xx;;;;::
+;::;::+xXXXxXx+X$&&$xXX$$XXX$XXxX&$XX$$&&&&&&X+Xxx$$$$$&&&$$$XXXx++;;;::;;+x$&&$Xx$$&&&&$$XXXXX+;;:::
+::;::;+x+:;xXXXx+XxX$$XXXx$$X$&&&$$$$$&&&&&&&&xxXXXX$$$$&&&$xX&&&X+;;:::;;XXXXXXX$$$&&$$&$XXXx+;:::::
+::;;;:::;;::::;+++xX&&&&&&X+XXxxxX$$$$&&&&&&&&$$XxXXX$$$&X+++X$$XXx;;;;;+;xX$$X$$$$$XxxxxX&$$x+;;::::
+::::::::;::::::;;;;+$&&&&$x$$$$$$XxX$$&&&&&&&&XxxX$$$$$$&Xxx$&$$XX$X++++++XXXXX$$$$$$$&&XX&&&$+;;::::
+::::::::;::::::;;;;+x$&&Xx+&&&$&&&Xxxxx&&&&$$XxXX$XxXX$&$x+x&&$$$$XXXxxxxxxx$$XX$$&&&&&&$XX$X+++;;:::
+::;::::::::::::::;;;;x$$Xx+&&&&&&&&$$XXXXX&$Xxx+xXxxxX$Xx+x$&&&&$$$$X$$XX$$X$$Xx+x$&&&&$$$Xxx+::::;;;
+::::::.:;::::::::;;:;+X$xx&&&&&&&&&&&&&XXXXx+;;;;xxxX&&XxX&&&&&&&&&$x+$$$$$$$$$&Xxxx&&$$$X$X+;:;;;++;
+:;::::::::::::;::::;;+;;++$&$$$$&$XXX&x++++;;;:;;+xx$&&&$X$$$&&&&&&$x+X&&&$$$$&&$+Xx$&$$$XXx++;:;:;;;
+:;;::::::::::::::::;:::;;;;;xxxX$Xxx+;+;+;;:;;;:;+++xX$$$XX$$$$&&&&$xx+$&&&&&&&&&XxX$XXX$Xx+;;:;++;::
+;;;::::::.::::::;+:::;;:::::;;;:;;;::;;;;;::+x+;;+++x+xxxXXX$$$$$&&$xxX&&&&&&&&&&Xx$&$XXXXX+;::::::;:
+::::::::::::;;;:::::;+;::;;;:;;;:;;;:;;;;::::;;+;+x+++xXXXX$$$XX$$X$Xx$&&$&$$$$&X$$&&$Xx++x;;:;:::;;;
+;::;;::::::::::::::;+;;::+;;::;;:;;:::::;:::;;;++x+;+++++xX$$$XXX$&&&&&$$$$&&$XXX$&$Xxx+;;;;:;;:::::;
+;::;;:::::::;:::::::::;+x+;;:::::::;;;:::::::;;;;;;;;+x;;+xxXXXXX$&&&&&$XX$$$$XXXxx+++++;;;:;;:::;:;;
+;;;:::::::;;::::;;;:::;++;;:::::::;+;:;;;;::;;:;:;;;;x+;;;;;+xxxxxXXXXXXX$X$$Xxxx+++;+;;;;;:::;;;:;:;
+:;:;;;:::::::::;;:::;;:::::+::;;::::::;;;;;;;::;;;;+XX+;:;;+;;;+;x+++xxxxx++++;;;;;;:;;;;;;::::;;;:::
+:;xx;::;::::;::;:;::;;::::;+;:::::::;;;:::;:;:;;;:;;;+;;:;;;;;;;:;;;:;;;;+++;;:::;;::;;::::;::::::;;;
+::::::;:::::::::;;;;::::::::::;+:::::::::::::::;::;;;;;;::;++;++::;;:;:;;;:;;;:::;;::;;::;:::::::;;;;
+""","The name \"Platirhinos\" is derived from greek, meaning \"flat snout\". It uses this unique nose to burrow into the ground. The patterns on this species are extremely diverse, depending on locality. In New Jersey, the coloring is commonly a rusty gray with black or brown rectangular blotches. It can be found in places with sandy substrates. It often immitates venomous snakes by puffing up its body and flattening its head. It can also deter predators by emitting an awful smell.",animalia,chordata,reptilia,squamata,serpentes,colubridae,heterodon)
 #TODO: finish writing all the snake bios. change the print statement in snakeDex to account for them being objects.
 
 #redefine the allsnakes arrat now that the snakes are objects
