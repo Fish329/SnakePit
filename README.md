@@ -4,3 +4,4 @@ This assignment was to practice with class inheritance.
 
 # How to use
 Make sure you have python installed. Download the SnakePit.py file and run it.
+![Logo](logo.png "SnakePit")
