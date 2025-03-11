@@ -1,3 +1,4 @@
+#title screen
 print("""
  ######  ##    ##    ###    ##    ## ########    ########  #### ########
 ##    ## ###   ##   ## ##   ##   ##  ##          ##     ##  ##     ##   
@@ -24,7 +25,7 @@ OV=("Opheodrys vernalis")
 RS=("Regina septemvittata")
 
 
-allsnakes=[CAA,CCC,CCConstr,PG,PO,HP,LGG,LT,NSS,OA,OV,RS] #list of all the snakes for classes to interact with
+allsnakes=[CAA,CCC,CCConstr,PG,PO,HP,LGG,LT,NSS,OA,OV,RS] #list of all the snakes for program to interact with
 class kingdom: #superclass
     def __init__(self,name,details,snakes): #define all the kinds of levels
         self.name=name
@@ -44,7 +45,7 @@ class kingdom: #superclass
         input("Input anything to return to the SnakeDex.") #I couldn't get viewing snake details to work. since the snakes are declared after the taxonomy classes, and the snake objects are dependent on the taxonomy classes, I don't think there's a way to rearrange it so you can view properties of an object that does not yet exist in the current line.
         snakeDex()
         return
-class phylum(kingdom): #define all the subclasses
+class phylum(kingdom): #inherit methods and attributes from parent class
     def __init__(self,name,details,snakes):
         super().__init__(name,details,snakes)
         level="Phylum"
