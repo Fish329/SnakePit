@@ -7,7 +7,8 @@ print("""
 ##    ## ##   ### ##     ## ##   ##  ##          ##         ##     ##   
  ######  ##    ## ##     ## ##    ## ########    ##        ####    ##   
 Welcome to the Snake Pit!
-all snake images sourced from Wikipedia. Thank you to the Wikipedia editors for keeping the information accurate!
+Most snake images, unless specified, were sourced from Wikipedia. Thank you to the Wikipedia editors for keeping the information accurate!
+The information in the Snake Pit is sourced from the Department of New Jersey's "Snakes of New Jersey" pamphlet and Wikipedia.
 All snakes in this list are nonvenomous.""")
 CAA=("Carphophis amoneus amoneus") #placeholders for the 12 snakes
 CCC=("Cemophora coccinea copei")
@@ -376,7 +377,54 @@ HP=snake("Heterodon platirhinos","Eastern Hognose Snake",""":;:::::::..::::::...
 :;xx;::;::::;::;:;::;;::::;+;:::::::;;;:::;:;:;;;:;;;+;;:;;;;;;;:;;;:;;;;+++;;:::;;::;;::::;::::::;;;
 ::::::;:::::::::;;;;::::::::::;+:::::::::::::::;::;;;;;;::;++;++::;;:;:;;;:;;;:::;;::;;::;:::::::;;;;
 ""","The name \"Platirhinos\" is derived from greek, meaning \"flat snout\". It uses this unique nose to burrow into the ground. The patterns on this species are extremely diverse, depending on locality. In New Jersey, the coloring is commonly a rusty gray with black or brown rectangular blotches. It can be found in places with sandy substrates. It often immitates venomous snakes by puffing up its body and flattening its head. It can also deter predators by emitting an awful smell.",animalia,chordata,reptilia,squamata,serpentes,colubridae,heterodon)
-LGG=snake("Lampropeltis getula getula","Eastern Kingsnake","""image here""","Description here",animalia,chordata,reptilia,squamata,serpentes,colubridae,lampropeltis)
+LGG=snake("Lampropeltis getula getula","Eastern Kingsnake","""................    .......................   .. .    ...............        . ............ . .......
+..........:................. .......               ................             ............  ..    .
+....................................   :.;X$$$$$$X:++;:...........              ....  ............ ..
+.............................. .... :X$&&;X&&&&$$X;xXxXXx+:........              .     ..........  . 
+....:...  .:x$Xx$&&$x;:...........:X&&&&&X;X&&&&$;;XXXX$$$X+:..  ..              ....................
+..........:$$&&$X&&$XXXx;:........;x&&&&&X$$xxxxx$$xxX$X+;x$$+..........           ............ .....
+ ..  .....+$XX$&&XX$XXx+$$$;....;$$$X+$$XX$X+:..:+XXx+xX;$$$$$+...........    .... ...... .......... 
+..........:+;;;+$&$X++;x&$&$+..:x$$&&XxXx..:..... ...:xXx$$$&$$:.........      ......................
+  ... .   .:;xx&&&&&$$$$&&&&&;.;$$$&$$X+..::...........:++;;;x$+..........    ................. .... 
+..... .....:;xXXX&$XX$$x$++XxX+x$$&&$XX:.:.. ...........+$&&&X++.......................... ....:.....
+....  ....xX$$$$XX&&&&&$&&&&&XxXxx;xXXx.:+xX$$Xxxx++;;;;x$&&&&Xx.::.....:.................   ........
+...........+XXX$X$&&&&&&&&&&&&$$&&&$$X::x&&&&&$$X$X$X$$&$&&&&$X+...:..:....::............ ...........
+ ...  .....:..::x+:;+X$&&&&&&$$&&&$$X&&&&x+$&&$$$$X;:x$&&&&&$Xx.::.:::.......... .    ...............
+..............+$&&&&&XXXXX$&$$$&&&$$$&&&&&x+XX&&$x+++xX$$$$XX;.......................................
+.  ..::.....:x$&&&&&&&X$$$X;;;xX&&$$$&&&&&X$XxxxxX$$$$xX$X+.......:.................. ...... ...  ...
+............;$$&&&&&$X$X+::X$$$$XX$x++xXX$X;......:.........:........................................
+............+$$x+xX$$x:...+$$$$&$Xxx$$$$XX:............................................ .. ... ......
+.........:: +x:x$$$$x;.::X$$$$&&&&xX$$$$$X:.........................::;xX$X;$$$$X;::..... ..... .:...
+........... .;+$XXXXX$$x;X$$&&&&$$x$$XXX$$$+.::..................;x$$$$&&&&:X&$$$$$$x::..............
+.  ...... .  .+x$$XxxXXXx:X$&$$$X;:+$$$$X+:x$$$$$$XX+:::::;+xX$$$$;+&&&&&&$;x$&&&&$+;XXX;............
+.  ....  ..:...+xX$$$$&&$XXX$$$x::.:+$$Xx:x$&$$$X$$X:+$$$$$$$$$$&&&x+X&&&$XXxx$$X+:;XXXXXx:... ......
+    .............:+xXXXXX$$X+;:...:..:+x++x$&&&&&&X;x&$&&&&+;X&&&&&XxxX$Xx+;;;+x$$xx$$$XxXX;.........
+.... ......... ..........:::............;xXx$$$$$x++x&&&&&$+xxX$$XXX+:..........::+XX$XXx++x;........
+. ........... .... ...........::...::...:....:;+xxxxXxXXXXXXXXxx;:..................+x++;:::;:.......
+   ...  .... ... . ..........::;. ...:....:::... :.........::........................:X$++Xx+X.......
+.........:..  .  ..... .......::;;;:..::::.........:.:.....:.::... . ..................+++Xxxx;......
+...  .. ....... ..  ......   ...:++;:............................  ..::..::............:;;XXXxx......
+...    .......  .... ..... .................:...:.::.:.............   ....... ...........+x:..;::....
+.     ......... ....  .............................::... ..... ......... ....:............xxXXx;.....
+.     ......... ... .......... .  ............................. ..........................:X$$X;.....
+...:......... ...... ....  ...................:.........:..........:.....................:.;+XX+...  
+....  . ..  ..... ...  ... .. ........ ............. ............... ......................;+x+;...  
+.. .    .......   . .....................:.....:. .............:. . .........  ............:x$$+.... 
+.  .  ..  ...  ... ...    . ........................:.. ................:..... .:..... .....x$$+.....
+..  .... .......... .  . .............. .:.:..::..... ..........:.. ........................;:;:.....
+...........   ....... .    ....  . ......::...::........... ........... .. ....... ...... ..+$$+..   
+....    ....... .. ... ........ ................:.............. .......... ....:............;$$+.    
+.... ..      . .......  ..........  ....... . .. ....:... .. .......... .........:..........:X$x:.   
+ .... .  ........ ......   ..:........ .....:...... ..:........... . ............:.:::.......x++.. . 
+.....    ... . .....    .............:..........::.. ......  ..:...........:............. ...;$X:.   
+.....   .. ....:. ....  ..:... ...... .. ...  .:..  . ....... . .....: .  ........:... ..... .$$;....
+..  ........ ..:...   .   :..:....... .. ...  ......................... ......:....:.. .. ....;;:.. .
+.        .    ........................... ... ........      ............  ............... ....:xx;...
+ ..  . . .......:... ..  .  . ......... ........ ............:..... ... .:................ ....;Xx:..
+..     ...... .......... .  . ..  ...............:.................... ......... .....:...... ..;+;:.
+ ...  .... ...............   ....::.........:.. ........ ...... ...........  ....................:XX:
+........ .  .:......  .. .. .....  ............................ .............. ....................+X
+""","This snake is primarily either black, blue-black, or dark brown with from 23-52 white or cream colored chain-like rings, earning it the name \"Chain snake\". It likes swamps and steambeds, and can be found under logs or debris, or even sometimes out in the open. They like to eat things like rodents, birds, and frogs, but may also eat Timber Rattlesnakes!",animalia,chordata,reptilia,squamata,serpentes,colubridae,lampropeltis)
 LT=snake("Lampropeltis triangulum","Eastern Milk Snake","""image here""","This snake typically has alternating red-black-yellow or white-black-red patterns. It likes wooded areas, river banks, and rocky hillsides, and also may make its home in a barn or building with a rodent problem. They are often mistaken for the venomous snakes of New Jersey, the Northern Copperhead and the Timber Rattlesnake. You may hear some mneumonics to help you differentiate them, but they dont exactly work.",animalia,chordata,reptilia,squamata,serpentes,colubridae,lampropeltis)
 NSS=snake("Nerodia sipedon sipedon","Northern Water Snake","""image here""","Description here",animalia,chordata,reptilia,squamata,serpentes,colubridae,nerodia)
 OA=snake("Opheodrys Aestivus","Rough Green Snake","""xxxxxxxxxxxxxxxxxxx+x+++++++++++++++++++++++++xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx$$$$$$XxxxxxXXXXX
@@ -419,20 +467,120 @@ $$$$$XXxxxxxxxxxXXXXxxxxXXXXX$X$$XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxxxxx
 xX$$$$$XxxxxXxXXXXXXXXXXXXXXX$XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxxxxxXXXXXXXXXX
 X$$$$$$$XXXXXxxxXXXXX$$XX$$XXxxxxxxXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxxxxxxxXXXXXXXXXXX
 ""","One of two green snakes in New Jersey. This one has rough keeled dorsal scales, and it camouflages in vegetation overhanging water. They like to eat insects, tree frogs, and tree snails. See also: Opheodrys vernalis.",animalia,chordata,reptilia,squamata,serpentes,colubridae,opheodrys)
-OV=snake("Opheodrys Vernalis","Smooth green snake","""image""","One of two green snakes in New Jersey. This one has smooth dorsal scales, and it camouflages in marshes, meadows, open woods, and other terrestrial habitats. They like to eat spineless caterpillars, moths, ants, snails, worms, and more. See also: Opheodrys Aestivus.",animalia,chordata,reptilia,squamata,serpentes,colubridae,opheodrys)
-RS=snake("Regina septemvittata","Queen Snake","""image""","This snake can be from olive to gray or dark brown in color, with peach or yellow stripes that run across its length. WIP")
+OV=snake("Opheodrys Vernalis","Smooth green snake","""+++++++++++++++++++xxxxxxxxXXXxxXXXXX$$$$$$XXxxxxxxxxxxxxxxxXX$$$XXXXXXXXxxxxx+++++++++++++xxxxxxxxxx
+++++++++++++++++++++xxxxxxxxxXXXXXX$$$$$$$$XXxxxxxxxxxxxxxxxxXXX$$$$XXXXXxxxxxx++++++++++xxxxxxxxxxxx
++++++++++++++++++++++xxxxxxxxxxXXXX$$$$$$$$XXXxxxxxxxxxxxxxxxxXXX$$$$$$XXxxxxxx+++++++++xxxxxxxxxxxxx
++++++++++++++++++++++xxxxxxxxxxxXXXX$$$$$$$XXXxxxxxxxxxxxxxxxxxXXX$$$$$XXxxxxxx++++++++++xxxx++xxxxxx
+++++++++++++++++++++++xxxxxxxxxxxXXXX$$$&$$XXXXxxxxxxxxxxxxxxxxXXXX$$$$XXXXxxxx++++++++++xxxxxxxxxxxx
++++++++++++++++++++++++xxxxxxxxxxxXXXX$&&$$$XXXXxxxxxxxxxxxxxxxxXXXX$$$XXXXxxxx+xxxxxxxxxxxxxxxxxxxxx
++++++++++++++++++++++++xxxxxxxxxxxXXXXX$&$$$XXXXXxxxxxxxxxxxxxxXXXXX$$$$XXxxxxxxxxxxxxxxxxxxxxXXXXxxx
+++++++++++++++++++++++++xxxxxxxxxxxXXXXX$$$$$XXXXXXxxxxxxxxxXxxXXXXXX$$$XXXxxxxxxxxxxxxxxxxxXXXXXXXxx
+++++++++++++++++++++++++++xxxxxxxxxXXXXX$$$$$$XXXXXXXxxxxxxxxxxXXXXXX$$$XXXxxxxxxxxxxxxxXXXXXXxxxxxxx
+++++++++++++++++++++++++++++xxxxxxxxxXXXX$$$$$$XXXXXXXXxxxxxxxXXXXXXX$$$XXXXxxxxxxxxxxxXXXXxxxxxxxxxx
+++++++++++++++++++++++++++++++xxxxxxxxXXXX$$$$$XXXXXXXXXXxxxXXXXXXXX$$$$$XXXXxxxxxxxxXXXXxxxxxxxxxxxx
+++++++++++++++++++++++++++++++++xxxxxxXXXXX$$$$$$XXXXXXXXXXXXXXXXX$$$$$$$XXXXXxxxxxxXX$XXxxxxxxxxxxxx
+++++++++++++++++++++++++++++++++xxxxxxxxXXXX$$$$$$XXXXXXXXXXXXXXX$$$$$$$$$XXXXXxxxXXXX$XxxxxxxxxxXXXX
+++++++++++++++++++++++++++++++++++xxXXXXX$$$$$$$$$$$$$X$$$$$$$$$$$$$$$$$$$$XXXXXXXXXXXXXxXXXXXXXXXXXX
++++++++++++++++++++++++++xxXXX$$$$$$$XX$XXXXXXXXXXXXxXXXxXXXXXXXXXXXX$$$$$$$XXXXXXXXXXXXXXXXX$$X$$$XX
+++++++++++++++++++xxXX$$$$$$$$$XX$XXXXXXxXxxxxxx+xx+++++xxxxxxxxxxxxxXxXXXX$$$$$$$$X$$XXX$$$$$$$$$$$$
++++++++++++++xXXX$XXXXXXXXXXXXXXXxxxxxxx++++;;;;;;;;;;;;;;;;;;+;;++++xxxxxxxXXXX$$$$$$$$$$&$$$&$$$$$$
+++++++++++xXXXXXXX$XXXxxXXXxxXxxxx+;+++;+;;;:::::;:::;:::::;:;;:;;;;;++++++xxxxXXXX$$$$$&&&&&&&&&&&$$
+++++++++XXXXXXXxxxxxx++x++xxx+++++;;;;;;:;:::::::::::::::::::::::::::;;;;;;++++xxxXXXX$$$$$&&&&$&&&&&
+++++++XXXXXXxxx++XX+++;;;;;;;;::;;;:::::::.:::.:......::...:..:...::.::::;;;;;;;+++xxxXXX$$$$$$$$$$$$
+++++x$$XxxxxXXxxXX$X++;;:::::::::::::::.::::::::::::::::::.::..::..::::::::::;;;;;++++xxxXX$$$&$$$$$$
++++X$XXXxxx+x$$$$X$;;:..::::::::::::::::::::::::::::;;;::;:::::::::::::::::::::;;;;;++++xxXX$$$&$$$$$
+x+xXXXXXxx++xx++x;:::::::::;;;:;::::;++xxxxxxxxxxxxxxxxxxxxxxxx+++;;;;::::::::::;:;;;;;+++xxXX$$&$$$$
+xxxxxx++;;;:::::;::::::;;++xx+xxxxxxx+++++++++++++++++++++++++++xxxxxxxxxx++;;;;;;;;;;;;++xxXXX$$&&&$
+xxxxx+++;;;;;;;;;;+xxxxxxxxxx+++++++++++++++++++++++++++++++++++++++++++xxxxXXXx++++++;+++xxXXX$$&$$$
+xxxxx+++x++xxxxxxxxxxxxxx++++++++;;;;;;;;;;+;;;;;;;;;;;+++++++++++++++++++++xxxXX$$$XxxxxxxxXXX$$&&&&
+xxxxx+xx++xxxxxxxxxx++++++++++;;;;;;;;;;;;;;;;;;;;;;;;;;;+++++++++++++++++x++xxxxxxxxxxXXXXXXX$$$&&&&
+xxxx+++xxxxxx+++++++++++++++;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;+++;;++++++++++++++xx+xxxxxxxxXXX$$$&&&&&
+XXxxxx+++++++++++++++++++;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;++++++++++x++++++xxxxxxxxXXXX$&&&
+XXxxx+xx+++++++++++++++;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;++++++++++++++++++++++xxxxxxxxXXXXX
+XXxxxx++++++++++++++++;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;++++++++++++++++++++++++xxxxxxxxxx
+XXxxxx+++++++++++++++;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;++++++++++++++++++++++++++++xxxxxx
+XXXxxxx++++++++++++;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;+++++++++++++++++++++++++++++++xxx
+XXxxxxx+++++++++++;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;++;;;;;;;;;++++++++++++++++++++++xx
+XXXxxx+++++++++++;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;+++++++++++++++++++++++
+XXXxxx+++++++++++;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;++++++++++++++++
+XXXxxxx++++++++++;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;+++++++++++++++
+XXXxxx+++++++++++;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;+++;;;+++++++++++
+XXXXxxx+++++++++;;;;;;;;;;;;;;;;;;;::;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;++++++++++
+image sourced from https://www.vtherpatlas.org/
+""","One of two green snakes in New Jersey. This one has smooth dorsal scales, and it camouflages in marshes, meadows, open woods, and other terrestrial habitats. They like to eat spineless caterpillars, moths, ants, snails, worms, and more. See also: Opheodrys Aestivus.",animalia,chordata,reptilia,squamata,serpentes,colubridae,opheodrys)
+RS=snake("Regina septemvittata","Queen Snake","""+xxxxXXXXXXXXXXXXXXXXXXXxxx+;;;::::::::::;+xXXXXXX$$$$XXXXXXXXXXXXX$$XXX$$$$$X$XXx+;;;;;;;;;;;;;;;;;+
+++++++xxxxXXXXXXXXXXXXXXXXXXXXXXXx+;;;;;+XXXXXXXXX$$XXXXXXXxXXXXXXXX$XXX$$XX$$$$XXx+;;;;;;;;;;;;;++++
+xxx++++++++++xxxXXXXX$$$XX$$XXXX$$XXxxxXXXXXX$$XXX$XXXxXXXXXXXXXXXXX$$XX$$$$$$$$$Xx+;;;;;;;;+++++++++
+xxxxxxxxx++++++++xxxxXX$$$$$$$$$XXXXXXXXXXXXXXXXXXXXXxxXXXXxxXXXXX$$$$$$$$$$$$$$$Xx++;;;+++++++++++++
+xxxxxxxxxxxx+++++++++xxxXXXX$$$XXXXXXXxxXXXXX$$XxxXXXxxXXXXXxXXXXX$$$$$$$&&$$&&$$Xx++++++++x+++++++++
+xxxxxxxxxxxxxxxxxxxxxxx+++xxxXXXXXXXXXXXX$$XXX$XxxXXXXxxXXXXX$$$X$$$$$$$$&&&&&&$$Xx++++++++++++++++++
+xxxxxxxxxxxxxxxxxxxxxxxxx+xxXXXXXXXXXXXXX$$XXX$XxxX$$XxxXXXX$$$$$$$$&&&&&&&&$$$$Xxx++++++++++++++++++
+xxxxxxxxxxxxxxxx++xxxxxxxxxXXXXXXXXxXX$$$$$XXXXXXXXXXXXX$$$$$&$$$&&&&&$$$$$$$$$$Xxx++++++++++++++++++
+xxxxxxxxx++++++++++xxxxxxxXxXXXXXXXXX$$$$$$XXX$$XXXXXXX$$$$$$&&$$$&&&$$$$$$$$$XXxx+++++++++++++++++++
+xxxxx++++++++++++++xxxxxXXXXXXXXXxXX$$$$$$$XXX$$$X$$$$$&&&&&&&&$$$$$$$$$$$$XXXxxxxxxxx+++++++++++;;;;
+xx++++++++++++++++xxxxxX$$XxxXXXXXXX$$$$$XXX$X$$$$$$$$$$$$$$$$$$$$$$$XXXxxx+++++xxxxxxxx++++++++++;;;
+x+++++++++++++++++xxxxXX$XXxXXXXXXX$$$$$$$$$$$$$$$&&$$$$$$$$$$$$$XXx++++;;;;++++++xxxxxxxxx++++++++;;
++++++++++++++++++xxxxXX$$$XXXXXXXXXX$$$$$$$$$$$$$$$$$$$$$$$$$XXXx+;;:::;;;+++++++++xxxxxxxxx++++++++;
++++++++++++++++++xxxxX$$$$XXXXXxxXXX$$$$$$$$$$$$$$$$$$$$$$$Xx++;::::::;;++x++++++++xxxxxxxxx+++++++++
+++++++++++++++++xxxxXX$$$XXXXXXXXXXXX$$$$$$$$$$$$$$$$$$$$Xx+;::::::;;++xxxx+++++++++xxxxxxxxxx+++++++
++++++++++++++++xxxxxX$$$$$$$$XXXxXXXXX$$$$$$$$$$$$$$$$$$Xx+;:::::;+xxxxxx+++++++++++xxxxxxxxxxxx+++++
+++++++++++++++xxxxxxX$$$$$$XXXXXXXXXXXX$$$$$$$$$$$$$$$$$x;:::::;+xxxx++++++++++;;++++xxxxxxxxxxxxxx++
++++++xx+++++++++++++x$$$$$$X$$XXXxXXXXXX$X$$XX$$$$$$$$$Xx;:::;+xxx+++;+++++++;;;;;;;++xxxxxxxxxxxxxxx
++++++++++++++++++++xX$&&$$$$XXX$XxXXXXxXXXXX$$XX$$$$$$$Xx;::;++++++++++++++++;;;;;;;;++++xxxxxxxxxxxx
+++++++++++++++++++++x$&&$$$$$$$$$XxX$XXXXXXXXXXX$$$$$$$XXXXXXXxxxx+++++++++++;;;;;;;;++++++++xxxxxxxx
++++++++++++++;;;;;;;+X&&$$$$$XXX$$X$$$$$$$$XX$$$X$$$$XXXXXXXXXXX$Xxx++++++++++;;;;;;;;++++++++++++xxx
+++++++++++++;;;;;;;;+X$&&&$$$$$$XX$$$$$$$X$$$X$XXX$$$$$$XX$$$XXXXXXXxx++++++++++;;;;;;;;;;;;;;;++++++
++++++++++++++;;;;;;;++X$&$&&$$$$XXXXXXX$$XX$X$$$$$$&$$$$XXXXXXXXXXXX$$X++++++++++++++;;;;;;;;;;;;;+++
+++++++++++++;;;;;;;;;;+X$$$$$$$$XXXXXXXXXXX$$$$$$$$$$$$$$$$XXXXX$XXXX$$X++++++++++++;;;;;;;;;;;;;;;++
++++++++++++;;;;;;;;;;;;+X$$$$$$$$XXXXXXXXXXXXX;$$$$X$$$$$$$$$$$$$XXXXX$$X+++++++++++++;;;;;;;;;;;;;;+
++++++++++;;;;;;;;;;;;;;;x$$$$$$$$$XXXXXXXXXxxX$$$$$$XXXXXXXX$$$$XXXXXX$$X+;;+++++++++++++;;;;;;;;;;;;
+++++++++;;;;;;;;;;;;;;;;X$&$$$$$$$XX$XXXXXXXXXXXxXX$$XXXXXXXXXXXXXXXXXXXX::;++++++++++++++;;;;;;;;;;;
++++++++;;;;;;;;;;;;;;;;+$$$$&$$$$$XX$XXXXX$XXxxxXXXXXXXXXXXXX$XXXXXXXXXXx::;;;+++++++++++++++;;;;;;;;
+++++++;;;;;;;;;;;;;;;;;+xxX$$$$$&$$$$$$$$XXXXxXXXXXXXXXXXXXXXX$XXxxxXXXXx;::;;;+++++++++++++++++++;;;
++;;;;++;;;;;;;;;;;;;;;;;++X$&&$$$$$$$$$$XXXXXXXXXXXXXXXXXXXXXXX$XXxxXXxxXX;;;;;;;++++++++++++++++++++
+;;;;+++;;;;;;;;;;;;;;;;;;+xX$&&&$$$$$$$$$$XXXXXX$XXXXXXxxxXXXxxxX$xxXXXX&&x;;;;;;;++++++xxx++++++++++
+++++;+;;;;;;;;;;;;;;;;;;;;;;+x$&&&&$$$$$$XXXXXXXX$xxXXxxxxXXXXXXxxxxX$$X$&x+;;;;;+++++++++xx+++++++++
++++;;;;;;;;;;;;;;;;;;;;;;;+;;;+xX$&&&&$$&$$XXXXxX$XXXxXXXXXxxxxXXXxxX$$$$XX+;;++++++++++++x++++++++++
+++;;;;;;;;;;;;;;;;;;;;;;++;;;:::::+$&&&$$$XX$XXXXXXXxx+++xXxXxXXxxx+xX$$&$X;;++++++++++++x+++++++++++
++;;;;;;;;;;;;;;;;;;;;;;++;;;+;:::::;X&&$$$$X$$$$XxxXxXXXXXXxxxx+x+++xX$$$$X+;++++++++++++++++++++++++
+;;;;;;;;;;;;;;;;;;;;;+++;;;;;+;::::::;X$$&&XXX&$$$Xxxxxxx++xxx+xXxxxX$$$XX+;;++++++++++++++++++++++++
+;;;;;;;;;;;;;;;;;;;;++++;;;;;;++;;:::::+$$&&$$&&&$$Xxx++xxxxxXXxx+++X$$$XXx;;++++++++++++++++++++++++
+;;;;;;;;;;;;;;;;;;;;++++;;;;;;;;++;;::::X$$$$&&&&&$$X$Xxxxx++xx;;;+xx$$$Xx;;++++++++++++++;;;;;;;++++
+;;;;;;;;;;;;;;;;;;;+++++++;;;;;;;++++;::;+X$$&&&$&$$$&&$Xx+;+++++++xXXXxx;;;+++++++++++;;;;;;;;;;;+++
+;;;;;;;;;;;;;;;;;;;;++++++++;;+++++++x+;:::xX$$$&&$$$&&$xXx+;;;:.:xx+xx;+;;++++++++++;;;;;;;;;;;;;;++
+;;;;;;;;;;;;;;;;;;;;++++++++++++++++++++++;;;;+X$$$$$&&$XXx:;:::::::::::;;;++++++++++;;;;;;;;;;;;;+++
+;;;;;;;;;;;;;;;;;;;+++++++++++++++++++++x+++;:;+++X+x$xxXx+:::::::::::::;;;++++++++++;;;;;;;;++++++++
+;;;;;;;;;;;;;;;;;;+++++++++++++++++++++++++++++;::;+;;+x;::::::;:++x++;+x+;++++++++++++++++++++++++++
+;;;;;;;;;;;;;;;;;;++++++++++++++++++++++++++++++++;;++;:;::::+X&&$$x+;+++++++++++++++++++++++++++++++
+;;;;;;;;;;;;;;;;;+++++++++++++++++++++++++++++++++++++;;;+;;+$$$&&Xx;;;++++++++++++++++++++++++++++++
+;;;;;::::;;;;;;;;;+++++++++++++++++++++++++++++++++++;;+;;;+xxX$&$Xx+++++++xx+++++++++++++++++++x++++
+;;;;;;;:;;;;;;;;;;+++++++++++++++++++++++++++++++++++++++++;;+X$&$$XxxxXXXx+++++++++++++++++++x++++++
+;;;;;;;;;;;;;;;;;;;;;;+++++++++++++++++++++++++++++++++++++;+x$$XxX$XXx++++++++++++++++++++++xx++++++
+;;;;;;;;;;;;;;;;;;;;;;;;;++++++++++++++++++++++++++++++xxxxXXXx+;;;;+++++++++++++++++++++++++xxxx++++
+;;;;;;;;;;;;;;+;;;;;;;;;;;;;;+++++++++++++++++++++xxxxxxxx+++;;;;;;;;++++++++++++++++++++++++++++++++
+;;;;;;;;;;;;+++;;;;;;;;;;;;;;;+++++++++++++++++++++++++++++;;;;;;;;;;++++++++++++;+++++++++++++++++++
+;;;;;;;;;;+++;;;;;;;;;;;;;;;;;;;+++++++++++++++++++++++++++++;;;;;;;;++++++++++++++++++++++++++++++++
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;++++++++++++++++++++++;;;;;++++++++++++++++++++++++++++++++
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;++++++++++++++++++;;;;++++++++++++;;+++++++++++++++++++
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;++++++++++++++;;;;+++++++++++++++++++++++++++++++++
+;;;;;;;;;;;;;;;;++++++++;;;;;;;;::::;;;;;;;;;;;;;;;+++++++++++++;;;;+++++++++++++++++++++++++++++++++
+;;;;;;;;;;;;;;;;+++++++++;;;;;;;:::::::::::::;;;;;;;;+++++++++++;;;;+++++++++++++++++++++++++++++++++
+""","This snake can be from olive to gray or dark brown in color, with peach or yellow stripes that run across its length on its underbelly, a feature no other species has. They are very picky when it comes to living conditions. it lives in areas with at least 10 °C running streams and watersheds with stony, rocky bottoms. The reason for their very specific habitat is because of their diet, consisting of over 90% crayfish. They also eat things like tadpoles, minnows, newts, etc.",animalia,chordata,reptilia,squamata,serpentes,colubridae,regina)
 
 #TODO: finish writing all the snake bios. change the print statement in snakeDex to account for them being objects.
-#Placeholders: LGG, LT, NSS, OV, RS
-#unplaceholded: OA
+#Placeholders: LT, NSS
+#unplaceholded: OA, RS, OV, LGG
 
 #redefine the allsnakes arrat now that the snakes are objects
 allsnakes=[CAA,CCC,CCConstr,PG,PO,HP,LGG,LT,NSS,OA,OV,RS]
 def snakeDex(): #list of all the snakes for the user to interact with
+    print("")
     print("########## THE SNAKEDEX ##########")
     iter=0
     for x in allsnakes: #go through the list of snakes and print their names
         iter+=1
-        print(iter,": ",x,sep="")
+        print(iter,": ",x.name,sep="")
+    choose=input("Input the number of the snake you would like to view.")
+    #WIP
 
-CAA.snake()
+snakeDex()
