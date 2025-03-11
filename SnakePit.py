@@ -94,7 +94,7 @@ class snake: #Snake has a scientific name, common name, ASCII art picture, a des
         print("4. Order:",self.o.name)
         print("5. Suborder:",self.so.name)
         print("6. Family:",self.f.name)
-        print("7. Genus:",self.f.name)
+        print("7. Genus:",self.g.name)
         while True: 
             choice=input("Input 0 to return to SnakeDex, or input the number of a Taxonomy level to see details about it. ")
             try:
@@ -425,8 +425,88 @@ LGG=snake("Lampropeltis getula getula","Eastern Kingsnake","""................  
  ...  .... ...............   ....::.........:.. ........ ...... ...........  ....................:XX:
 ........ .  .:......  .. .. .....  ............................ .............. ....................+X
 ""","This snake is primarily either black, blue-black, or dark brown with from 23-52 white or cream colored chain-like rings, earning it the name \"Chain snake\". It likes swamps and steambeds, and can be found under logs or debris, or even sometimes out in the open. They like to eat things like rodents, birds, and frogs, but may also eat Timber Rattlesnakes!",animalia,chordata,reptilia,squamata,serpentes,colubridae,lampropeltis)
-LT=snake("Lampropeltis triangulum","Eastern Milk Snake","""image here""","This snake typically has alternating red-black-yellow or white-black-red patterns. It likes wooded areas, river banks, and rocky hillsides, and also may make its home in a barn or building with a rodent problem. They are often mistaken for the venomous snakes of New Jersey, the Northern Copperhead and the Timber Rattlesnake. You may hear some mneumonics to help you differentiate them, but they dont exactly work.",animalia,chordata,reptilia,squamata,serpentes,colubridae,lampropeltis)
-NSS=snake("Nerodia sipedon sipedon","Northern Water Snake","""image here""","Description here",animalia,chordata,reptilia,squamata,serpentes,colubridae,nerodia)
+LT=snake("Lampropeltis triangulum","Eastern Milk Snake",""";;:..............:::::::::::::...............................................:::::::::::.............
+;::.............::::.:::::.....................................................:.::::::::............
+:::................:::::::.......................................................::::::::::..........
+::...............:::::............................................................::::::::::.........
+::..............:::::...............................................................:::::::::........
+::.............:::::.................................................................:::::::::.......
+::............:::::.:.....::........::;::;+++::;;;;;::.......................:;+;+;:..:::::::........
+::.........:.:::::::...........:;+;;x+x+xx;;xx+x+xx+++xx+;::...............+X$:;XXxx;:::::::::.......
+::.........:.::::::........::;+++xxxxxxxxx;:xx+xxxxxX+:+x+xxxx;::........:xXX$X+X$Xx++;:::::::.......
+::...........::::::......;+xxxX+;xxxxxxxxx+::Xxxxxxxx;;Xxxxxx+++xx+:.....+XXXX$X$$XXx++;:::::::......
+::..........::::::..::;;+xxxxxxX+:+$XxXXXX$x;$$XXXXX$+:Xxxxxxxxx++xx;+:.:xXXXXX+:+$$Xxx;:::::::......
+::........::::::::..;xxxxxxxxxXX$+;x$$XX$$$$+$$$$$$$$xx$$$Xxxxx+;xxxxxxx+XXXXXX+:;x;+xXXx;::::::.....
+::........:::::;;::;+;;$XXxXXXX$$$$x$$$$$X$&&$xX$$$$$X$$$$$$$$X;;Xx+xxxx+xx+++X+;;x+xXXXx;;:::::.....
+::::...::.:::::::;xxXX;:+x$$$$$$$$$Xx++xXXXXXXX+X$$$$X+$&XX$$$Xx$$XXxxx+xXxx+x+x+;$XxxXXx;X::::::....
+::......:::;::::+xxxXX$Xx++X$$$XXx++++x+xXXX$Xx++++xx+X$X$x;+xX$$$$$$XXXx+;xXXXxX+xXXxxxxxX;:::::....
+::.......::;:::;xxXXXXX$$$$XXx+;+;;+x$XXxxX+;;;;;;;;;;;+XXX+;;;++X$$$$$+;+XXxXXxXXxXXXXXx+x+:.:::....
+::.......::;::;+xXXXX$$$X$Xxx++;;;;XXXXXX+;;;;;;;;;;;;;;+Xxx+;;;;;+xxXX$$XXXX$$XxXx;xxXXX;+;:.:::....
+;:::.:+;.::;::xxXX$$$$$$$$x++;;;;;x$XXXX+;;;::::::::::;;;xXX+;;;;;++++X$XXXXX$$$XXx;:+xX+x++:::::....
+;:......:::;:;+;+++xXXx$x+;;;;;;;+xxxXX+;::::::::::::::::X$X;;;;;;;++xX$XXXXXX;;;xX;::::++;::::::....
+;;:::.::::;;:;xXxxxXXXxXx;;;;;:::x$xxxx;::::::::::::::::+x+x;;+;+xxxXxXx+xxX$$Xx++:;::::::::::.::....
++;::::...;;;:+xXXXX$$$Xx;;;::::::XXxXXx;:::::::::::::::+xxxxxx++xXXxxxX$XXxX$$Xxxx;::::::::::::::....
+;;:....::::;+xxXXXXX$XXx;;::::::;XXXXX+::::::.:::::::++$XxxxXXX++XXXXXXXXxX$$$xxXX+::::::::::::::....
+;;::..:::::;;;xXXXXX$X$x;;::::::+Xxxxx+:::::::::;;+xx$;+XXXX$$$$Xx$XXXXXXXxxXXXXx+::::::::::..:::....
+;;;::.:::::;;;+xXXX$$X;Xx;::::::+xxxX$x:::::;++x+xxXX$Xx;xX$XXxxxxx&$$$X$$x;:+xXx;::::::::::.::::....
+;;;::::..:::;;;+X$X+;+$Xx+;:::::;XXXXXX;;x;;:::::;+X$XX$$$X++XXXXX:;xXXXxXXXX;;+;:::::::::::.:::.....
+;;;;:::.::::;;;+xx;+XXXXXXxx;::::x$XXXXx;:::::::;+X$$XXX$x+XXxxxxXX;;$XXXXxX+;;::::::::::::..:::.....
+;;;;:;:.:::::;;;;+X$XXXXXxXxx++;:;X$$x+xXXx;::::+XxxxX$$XX;;+xXXXXXx:+$XXxx+;::::::.:::::.:.::::.....
+;;;;;:::.:::::;;;;+xXXXxxXxXXx++X+;xx+XxxxxXX+xXXXXXx+x$XXx;:+XXxXXX++;;;:::::::...:::::::.::::......
+;;;;;;::.:::::;;;;;;+XXXXXXXx;;XXXxXX$$XXxxxX++xxxxXX$$XXxxxX;+x++;:::::::::::....::::::...::::......
+;;;;;;;::::::::;;;:;;;+xXX$X+;xXxxXXXXXX$$$XXX:XXXXXXXXXxxxXXx+;:::::::::::::....:::::....::::.......
+;;;;;;;;::::::::;;;::;;;;+xX+X$XXxxxxxXXxxXX$$XXXXx+XXXxxxXx+;::::::.....:::....::..::..:::::........
+;;;;;;;;;:::::::::;;:::::;;;+xXXXXXXxxxx;;XXXXXXXXX+:xXXXXx+;::::.............::.......::::..........
+;;+;;;;;;;:::::::::;;;:::::;;;;;+XXXXXXx:;xxxxxxxXXX+:xxx+;:::...............:::...:.:::::...........
+;;;;;;;;;;;::::::::::;;::::::;;;:;;+xxXx;xXXXXXXXXXX$x++;:::.....................:..:::::............
+;;;;;;;;;;;;::::.::::::;;:::::::;;;;;:;+++xxxxXXxxx+;;:::::.....................:::::::..............
+;;;;;;;;;;;;;;:::..:.:::;;;::::::::;;::::::;::::::::::::::......................::::.................
++;;;;;;;;;;;;;;:::.....::::;;++::::::::::::::::::::::::::::::::::.+:...........:::...................
++++;;;;;;;;;;;;;;:::......:::;;;::..::::::::::::::::::::::::....:.............:......................
+++++;;;;;;;;;+++;;;:::......::::;;::::::::::::::........................::...........................
+""","This snake typically has alternating red-black-yellow or white-black-red patterns. It likes wooded areas, river banks, and rocky hillsides, and also may make its home in a barn or building with a rodent problem. They are often mistaken for the venomous snakes of New Jersey, the Northern Copperhead and the Timber Rattlesnake. You may hear some mneumonics to help you differentiate them, but they dont exactly work.",animalia,chordata,reptilia,squamata,serpentes,colubridae,lampropeltis)
+NSS=snake("Nerodia sipedon sipedon","Northern Water Snake",""";;:::;;+$x;:::;;::::;;++;;:::::.  .:;+xXX+;;;;;:. ..:;;:;;;;;;;;;;;;;;;;;;;::;;:..      ....  ....:x$
+;++;;++xX;:..::::..:::;;;::::.:++;;+++;+xxx+;;+;:....::;++;;;;;;;;::;++;;;;;::. .....    ..:..   .;xX
+;+;::::+x+;::;:.....::;++::;;;;;;;;;;++++xXX++;;;:::...:;+;;;;::;;::;;;;;;;;:.  .::::::;;;xxx+;::;xxX
+.:.....;;::;;:....::;+X$$x+;;;;;+;+;;;+xXXXXx;;;;;;;;;;;;;;:::;;;:.:;;;;++++;.. .:;+;;;+;;+X$$&$XxxXX
+......:++:;;;;;:::::+X&&$xxxx+;;++++;;;+xXXxx+;;;;+Xx+;++;;:::;;;::.;;;+xXX+:::.:+;;;:::;;+++++++xXxx
+...::;+xxxx+;;+;:...:++++++;::;;++++;;++xXxx++;;+++++;;:;::;:;;;;;;+xxxXXXx;:...;++;+++;;::::::;;+;;;
+:;;;+++x++xX+;++;:...:;++x+:::::;+++;::;xxxx++;;+xx+;;:::;;:;;++++++xxxxxx+++;:;+++;++x+++++;::;;;;;+
+++++++xxxxxxxx+++;;;++xxxxxxxx+xx+++::::;;;+;+;;;;+;;:::;++;+x++x++++xxxxx++++++++++++;;+xxxx+xxxxxx$
++++x+xXXxxXXXxx+++;+XxxxxXX$$$$$$$$x:;;;;;;;;;;;;;;;;;;;;;;;;;;;::::;;;;;;;;+++++++++;;++++++++xXXxX$
+xXXXXX$&$$&&$$$xxXx+++X$$&&$$$XX$&$+:;;;;;;;;;;;;;;;;;;+;;;;;;:;;::::::::::::::::::;+x+++++++;;;+X$&$
+$$$XXXX$$$X$&&&X+;;;;::::;;;;++++xxx+;;;;;;;;;;;;;::;;:;;;;:::::::::::::;;+++++xxxXXXXXXXXXXXXXXX$&&$
+$xx+xXX$$Xx+++++;;;::::::::::;;;;;;+xX;;++;;x$x;;;;;;:::;:..::::::::::::;;xX$XX$&&&&&&&&&&&&&&&&$$$&&
++;;;;;;;;;;;;;;;;;:::::::::::::;+++;+xXx+++++++++;;;;;;;+;;::;;;;:+X;:::;;;+XX$$&&&&$&&&&&&&&&&&$$$&&
+;;;;;;;:;;;;;;;;;;;;;:;;;;;;;+xxxxxXXxXX++++++;;;:....::::..::::;::::;;;:;;;++++xx++x+xxx+xxx+++xX$$&
++++;;;;;;;;++++;;;;;;;;;;;;;+xX$$$$$$$$X;::...::;;;;:::;+++++;;:;;:::;:;;++;;++x+xXx++xXx+;++xxxXX$$&
+++++++;;++++;+++++;;;;;;;;;++xX$$$x+;;:....:;+++;;;;;;;;+++++;+;::;:;;++++;;;+X$xx&$XXx;;x;;xX$$XX$$&
++x++++++x+++++++x++++;+;;+xxx+;:;::....::;;;;++;;;+x++++++xx+;:;++;:;;+xx+++;::;;;;;++;:;x+;+XXX$$$&&
++xx+xx+xxXXxxXxxx+xX++++++;;:::;;;;+++++;;+;+xX&&X+;+;;++x++xx+;;;;:;+++x+;;;;;+++;;;;;;+;;;;+$$XX$&&
+xxXxXXXXXXXXxXxXXXxx+;:;;::::;;::::;;;;+x++;xx+++;+x++;+xxx;XxxXxx+:+x++++;;;;+;;;;;;+++;:++:;;+xxxXX
++xXX$$X$$$XxX$x+;;++;;;;::;:;++++++++++;;++x;$X++xxx+;+++x++;+++++;+;x+:;;;;;;;++;;;;;;;;;+++;;+;;;+x
+xxXXX$X$Xxx:;;;;;++;;;;+++;;;++;++;++;;:;:;+++;:+x+;;;;+++x+xxx+;XX;+:+++++;;+;:x+;+++;;++;;;;+x+++x;
+x;XXX$x;:;;;+++++;;;;;+x++;;;;;;;+++++++;;+;;;;;;;;+++;;xXX++xXx+X$;;+++;;+;+x++;+++x+;+x+;;++;++;xx;
+xxX+;::;;;;;+++++;+++++;::::;++++;;;::;++;;;;+++;;;+++++;XX++x&X+;X$X$x+;;;;;+x;+++x+++;xx;;x+;;+;+++
+;;;:;;;;;+xx+++++++++;+x+xx++++++;;+;;xx++x++X+;;;;xx+++xX&X;;x$$Xx+++;++;++++;+;+xx+++;xx;+x+;;;;++;
+;;;;;+x+++xxxx+;;;+;;xXx++++xx++++;;+Xx;++;;+x+;;;+x$&&X;;x$$XX$&$Xx;++++++;+;+;;+;+;;;+;;+++++x+++++
+;;+++++xXXxXxxxx++xxxXxx+++xXx+;++;+xx+;;;;;+$XxXXXXxX&$xxxxX&$X++xXxX$X++Xx+xx++x+++++;;;;;++;;+;;x;
++++xxXxx+XX$XXXXxxxxx+++XXX$Xx+++++$$xxxxxxxx&&&X++++xX$$XxXXx+xXx+xx+xXx+xX++$$xX$Xxx++++;++x++++++x
++xxxxxxx+X$$$X$$XXXX++XXxx+;;++xXX$&$xxxxX$Xx+$$xxXXxxX$$XxXxx+xXX+X$$xXXxxxx+X$xxXX$$xx+++;+++x++++x
++++xXXx+X$$$$$$X$XXXXX$XX$$$&X+;:;++::;xx;;++X&$XXxXXXXxxxxXXxxxx+X$&$x$$XX$$XX&$$$XX$X$Xxx+;+;+;++;+
+XXXxxxxX$$$&&$$$XXX$$$$$XXX$$$$$$Xx+++X$$XxXXXxxxXXX$$XX$X$XXXXX$&X$&&X$XXX$$X$&$$&&&&$$X$x++++;;;+;+
+xxxXXX+x$&&&&&&&&$Xxx+x$&&&&&&&&&&$$$$$$$XXXXxXXXxxXXXXxX$$$$X$$X&&X$&&$&&&&&&&&$&&$&&&&$$XX+++++++x+
+XXxxxXXxX&&&&&&&$$$&$$$$X$&&&&$$$$$$$$XXxxX$$XX$$$$X$&&&$$&&$$&&$$&$X&&&&&&&&&&&$&&&&&&&$&&$x++++;;x+
+++xxxxXX$&&&&&&&&&$$$$&&&&&$$$$$$$$$XX$$x:..:......::;+xxxxxxX&&&&&&&&&&&&&&&&&&&&&$$&&&&$$&X++++xxxX
+++;:::;+X&&&&&&&&&$$X$&&&$$$$$$$$X$$&&&&&&&&&$X+;:..;xXX&&&&&&&&&&&&&&$xX$&&&&&&&&&&&&&&&&&&Xx++++x++
+x;;;::::++$&&&&&&&&$$$XX$$$$$XXXx$&&&&&&&&&&&&&&&&X;:;+;++;;;:;+X&&$+;::;x&&&&&&&&&&&&&&&&$$x++;++xxx
++x+;:::::;;$$&&&&&&&&&$$&&&&&$Xxxx+X&&&&&&&&&&$+;;+x+++x+;;;:::;;+x;;;::;X&&&&&&&&&&&&&&&&$$xxx+xxx++
+X;++x++;;;;++XXX$$$XXXX$&&&&&&&$xxXxx$X+x$$$&&x;::;x$X;;;++;+;;++;;;;;;;;x&&&&&&&&&&&&&&&&$xxxx+xXx++
+$+;;+xX&&&x$X$$X$&$XXX$&&$$&&&&&&$X+x$++xxXX$+;++;:+X&$+:;x+;;;;;;;+;;;+x$&&&&&&&&&&&&&&&$Xxxxx++++xx
+$X;;+$&$$$$X&&x;;x$$$$$$&&&&$$&&&&X+++;++++X$&&$x++;+x+;;;;;;;+x+++;:;;+xX$$&&&&&&&&&&&&$xxxxxXXxx+++
+x$Xx+XX++xx;;X+;;+X$$&&&$XxXX$$$$$$Xx++xX$&&&&$++x+;;++x+++X$$$XxXx;;;;;+xX$$$&&&&&&&&$Xxxxx++xxXxxxx
+&&$$XXX+;;++;x;;+++++X&&&&&$$XX$XXXXX$XX+X&&$+;;;;+xX$&&&XxxXX&&&&&$xx++++x$$$$&&&&&$Xx+x+xXxxxxxxxxx
+""","These snakes can be brown, grey, reddish, or brownish-black, with dark neck crossbands and dark blotches everywhere else. It's often misidentified for a copperhead. As they mature, the pattern becomes more obscure, sometimes turning the snake entirely black. You can usually find them in groups basking on logs and rocks along stream banks. They like to eat tadpoles, frogs, worms, leeches, etc. Sometimes they even eat entire fish!",animalia,chordata,reptilia,squamata,serpentes,colubridae,nerodia)
 OA=snake("Opheodrys Aestivus","Rough Green Snake","""xxxxxxxxxxxxxxxxxxx+x+++++++++++++++++++++++++xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx$$$$$$XxxxxxXXXXX
 xxxxxxxxxxxxxxxxx+x++++++++++++++++++++++++++++++xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx$&&$$$XxxxxxXX$X
 xxxxxxxxxxxxxxxx+++++++++++++++++++++++++++++++++++++x+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx$$&&$$XxxXXXXXX
@@ -567,11 +647,7 @@ x+++++++++++++++++xxxxXX$XXxXXXXXXX$$$$$$$$$$$$$$$&&$$$$$$$$$$$$$XXx++++;;;;++++
 ;;;;;;;;;;;;;;;;+++++++++;;;;;;;:::::::::::::;;;;;;;;+++++++++++;;;;+++++++++++++++++++++++++++++++++
 ""","This snake can be from olive to gray or dark brown in color, with peach or yellow stripes that run across its length on its underbelly, a feature no other species has. They are very picky when it comes to living conditions. it lives in areas with at least 10 °C running streams and watersheds with stony, rocky bottoms. The reason for their very specific habitat is because of their diet, consisting of over 90% crayfish. They also eat things like tadpoles, minnows, newts, etc.",animalia,chordata,reptilia,squamata,serpentes,colubridae,regina)
 
-#TODO: finish writing all the snake bios. change the print statement in snakeDex to account for them being objects.
-#Placeholders: LT, NSS
-#unplaceholded: OA, RS, OV, LGG
-
-#redefine the allsnakes arrat now that the snakes are objects
+#redefine the allsnakes array now that the snakes are objects
 allsnakes=[CAA,CCC,CCConstr,PG,PO,HP,LGG,LT,NSS,OA,OV,RS]
 def snakeDex(): #list of all the snakes for the user to interact with
     print("")
@@ -580,7 +656,18 @@ def snakeDex(): #list of all the snakes for the user to interact with
     for x in allsnakes: #go through the list of snakes and print their names
         iter+=1
         print(iter,": ",x.name,sep="")
-    choose=input("Input the number of the snake you would like to view.")
-    #WIP
+    while True:
+        choose=input("Input the number of the snake you would like to view.")
+        try:
+            choose=int(choose)
+        except:
+            print("ERROR: please input a whole number.")
+            continue
+        if choose > len(allsnakes) or choose < 0:
+            print("ERROR: please choose from the list provided.")
+            continue
+        else:
+            allsnakes[choose-1].snake()
+    
 
 snakeDex()
